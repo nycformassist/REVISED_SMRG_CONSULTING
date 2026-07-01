@@ -1,3 +1,4 @@
+$AppCode = @'
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +9,7 @@ import Contact from './pages/Contact';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
+
   const renderPage = () => {
     switch (currentPage) {
       case 'home': return <Home setPage={setCurrentPage} />;
@@ -17,6 +19,7 @@ export default function App() {
       default: return <Home setPage={setCurrentPage} />;
     }
   };
+
   return (
     <>
       <Navbar setPage={setCurrentPage} />
@@ -25,3 +28,5 @@ export default function App() {
     </>
   );
 }
+'@
+[System.IO.File]::WriteAllText("$pwd\src\App.tsx", $AppCode)

@@ -22,7 +22,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       <section className="bg-white" style={{ padding: '4rem 1rem', borderBottom: '1px solid var(--border)' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
           <div>
-            <h2 style={{ fontSize: '2.25rem', lineHeight: '1.3' }}>Built on More Than Technology</h2>
+            <h2>Built on More Than Technology</h2>
             <h3 style={{ fontSize: '1.25rem', marginTop: '1rem', color: 'var(--accent-color)' }}>Technology doesn't solve operational problems. Processes do.</h3>
           </div>
           <div>
@@ -55,27 +55,27 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       <section className="bg-white" style={{ padding: '4rem 1rem' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.25rem', marginBottom: '1rem', textAlign: 'center' }}>Dedicated Operational Systems</h2>
-          <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '3rem', maxWith: '600px', margin: '0 auto 3rem' }}>Instead of surface-level products, we deploy deep architectural assets configured specifically for your mission profile.</p>
+          <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>Instead of surface-level products, we deploy deep architectural assets configured specifically for your mission profile.</p>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
             <div className="card" style={{ padding: '2rem', borderTop: '4px solid #0066cc', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
               <h3>LIRU™</h3>
               <p style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#666' }}>Legal Intake Readiness Utility</p>
               <p style={{ margin: '1rem 0' }}>AI-powered legal intake infrastructure designed to structure, validate, and organize client information before it reaches your legal team.</p>
-              <button onClick={() => setPage('services')} style={{ background: 'none', border: 'none', color: '#0066cc', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
+              <button onClick={() => setPage('liru')} style={{ background: 'none', border: 'none', color: '#0066cc', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
             </div>
 
             <div className="card" style={{ padding: '2rem', borderTop: '4px solid #00cc66', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
               <h3>IRU™</h3>
               <p style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#666' }}>Immigration Readiness Utility</p>
               <p style={{ margin: '1rem 0' }}>Helping nonprofits and community organizations organize immigration intake while connecting individuals with appropriate legal and community resources.</p>
-              <button onClick={() => setPage('services')} style={{ background: 'none', border: 'none', color: '#00cc66', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
+              <button onClick={() => setPage('iru')} style={{ background: 'none', border: 'none', color: '#00cc66', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
             </div>
 
             <div className="card" style={{ padding: '2rem', borderTop: '4px solid #cc0066', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
               <h3>Childcare Operational Command Center™</h3>
               <p style={{ margin: '1rem 0' }}>Transform parent knowledge into structured operational guidance that supports consistent, child-specific care.</p>
-              <button onClick={() => setPage('services')} style={{ background: 'none', border: 'none', color: '#cc0066', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
+              <button onClick={() => setPage('childcare')} style={{ background: 'none', border: 'none', color: '#cc0066', fontWeight: 'bold', cursor: 'pointer', padding: 0 }}>Learn More →</button>
             </div>
 
             <div className="card" style={{ padding: '2rem', borderTop: '4px solid #333', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>

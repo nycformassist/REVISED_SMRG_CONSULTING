@@ -1,4 +1,3 @@
-$HomeCode = @'
 export default function Home({ setPage }: { setPage: (page: string) => void }) {
   return (
     <>
@@ -35,5 +34,3 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
     </>
   );
 }
-'@
-[System.IO.File]::WriteAllText("$pwd\src\pages\Home.tsx", $HomeCode)

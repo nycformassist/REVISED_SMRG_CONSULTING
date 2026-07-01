@@ -1,4 +1,3 @@
-$ServicesCode = @'
 export default function Services({ setPage }: { setPage: (page: string) => void }) {
   return (
     <>
@@ -41,5 +40,3 @@ export default function Services({ setPage }: { setPage: (page: string) => void 
     </>
   );
 }
-'@
-[System.IO.File]::WriteAllText("$pwd\src\pages\Services.tsx", $ServicesCode)

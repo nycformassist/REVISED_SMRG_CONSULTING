@@ -1,4 +1,3 @@
-$ContactCode = @'
 import { useState } from 'react';
 
 export default function Contact() {
@@ -119,5 +118,3 @@ export default function Contact() {
     </section>
   );
 }
-'@
-[System.IO.File]::WriteAllText("$pwd\src\pages\Contact.tsx", $ContactCode)

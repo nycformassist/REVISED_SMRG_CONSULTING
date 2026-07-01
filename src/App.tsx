@@ -1,4 +1,3 @@
-$AppCode = @'
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -28,5 +27,3 @@ export default function App() {
     </>
   );
 }
-'@
-[System.IO.File]::WriteAllText("$pwd\src\App.tsx", $AppCode)

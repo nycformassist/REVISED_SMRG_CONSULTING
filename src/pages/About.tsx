@@ -1,4 +1,3 @@
-$AboutCode = @'
 export default function About() {
   return (
     <>
@@ -29,5 +28,3 @@ export default function About() {
     </>
   );
 }
-'@
-[System.IO.File]::WriteAllText("$pwd\src\pages\About.tsx", $AboutCode)

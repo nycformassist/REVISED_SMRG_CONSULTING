@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'SMRG Diagnostics <onboarding@resend.dev>',
-        to: process.env.TO_EMAIL || 'info@smrgconsulting.com',
+        to: 'support@smrgconsulting.com',
         subject: `SMRG Blindspot Scan: ${company}`,
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\n\nDetails:\n${message}`
       })
@@ -33,7 +33,6 @@ export default async function handler(req, res) {
     if (resendResponse.ok) {
       return res.status(200).json({ success: true });
     } else {
-      // Return the exact error string from Resend's API
       return res.status(resendResponse.status).json({ 
         error: `Resend Rejected Request: ${resendData.message || JSON.stringify(resendData)}` 
       });

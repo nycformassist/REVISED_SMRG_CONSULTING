@@ -29,14 +29,17 @@ export default function Contact() {
         body: JSON.stringify(payload)
       });
       
+      const data = await response.json();
+      
       if (response.ok) {
         setStatus('Scan initiated. Our team will contact you with the next phase.');
         (e.target as HTMLFormElement).reset();
       } else {
-        setStatus('System error. Please try again or contact us directly.');
+        // Display the explicit server error on screen
+        setStatus(`Error: ${data.error || 'Server rejected response without error details.'}`);
       }
-    } catch {
-      setStatus('Network connection error. Please verify your connection.');
+    } catch (err: any) {
+      setStatus(`Network tracking connection error: ${err.message || err}`);
     }
   };
 

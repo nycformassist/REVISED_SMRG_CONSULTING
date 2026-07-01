@@ -1,41 +1,52 @@
 export default function About() {
   return (
     <>
-      <section className="bg-dark">
-        <div className="container">
-          <h1 style={{ fontSize: '3rem', lineHeight: '1.2' }}>Built on 20+ Years of Operational Leadership.</h1>
-          <p style={{ fontSize: '1.25rem', marginTop: '0.5rem', color: 'var(--text-light)' }}>
-            Based in NYC. Focused on measurable business value.
+      {/* HEADER SECTION */}
+      <section className="bg-dark" style={{ padding: '4rem 1rem' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 style={{ fontSize: '3rem', lineHeight: '1.2', marginBottom: '1rem' }}>20 Years of Operational Leadership</h1>
+          <p style={{ fontSize: '1.25rem', color: 'var(--text-light)', maxWidth: '800px' }}>
+            Most AI consultants begin with technology. I began with operations.
           </p>
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="container grid-2">
+      {/* PHILOSOPHY SECTION */}
+      <section className="bg-white" style={{ padding: '4rem 1rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
           <div>
-            <h2>Operational Clarity Before Automation™</h2>
-            <p style={{ marginTop: '1rem' }}>
-              With over two decades of experience in business management, workflow optimization, and AI implementation, SMRG Consulting was founded on a simple truth: <strong>technology cannot fix a broken process.</strong>
+            <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>The Trap of Scattered Knowledge</h2>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '1rem' }}>
+              For more than two decades, I've worked inside organizations improving workflows, building systems, leading teams, reducing operational friction, and solving complex business problems.
             </p>
-            <p style={{ marginTop: '1rem' }}>
-              Most businesses are sold software solutions to solve operational problems. We take a different approach. We find the hidden inefficiencies—the blindspots—quietly draining your profit and creating unnecessary work. 
-            </p>
-            <p style={{ marginTop: '1rem' }}>
-              We establish absolute operational clarity first. Only then do we implement practical AI and automation solutions designed around the people who actually use them.
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+              Throughout my career I've learned one lesson: **The greatest operational asset inside any organization isn't software. It's institutional knowledge.**
             </p>
           </div>
           <div>
-            <div className="card bg-light" style={{ borderTop: '4px solid var(--accent-color)' }}>
-              <h3>The SMRG Methodology</h3>
-              <ul style={{ listStylePosition: 'inside', lineHeight: 2, marginTop: '1rem', fontWeight: 500 }}>
-                <li>Identify Hidden Leakage Vectors</li>
-                <li>Audit and Map Existing Workflows</li>
-                <li>Establish Baseline Operational Clarity</li>
-                <li>Deploy Practical AI & Automation</li>
-                <li>Drive Measurable Business Value</li>
-              </ul>
-            </div>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '1rem' }}>
+              When that knowledge exists only in people's heads, organizations become fragile. Employees leave. Processes break. Customers experience inconsistency.
+            </p>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', fontWeight: 'bold', color: 'var(--accent-color)', borderLeft: '4px solid var(--accent-color)', paddingLeft: '1rem' }}>
+              Artificial intelligence changes what's possible—but only when it's built on well-designed operational systems. That's where SMRG Consulting focuses.
+            </p>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', marginTop: '1rem' }}>
+              We help organizations capture operational knowledge and transform it into scalable systems that improve consistency, documentation, and decision-making. Technology supports people. It doesn't replace them.
+            </p>
           </div>
+        </div>
+      </section>
+
+      {/* YOUR STORY SECTION */}
+      <section className="bg-light" style={{ padding: '4rem 1rem' }}>
+        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', textAlign: 'center' }}>Why I Built SMRG Consulting</h2>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '1.5rem' }}>
+            After spending more than twenty years improving operations across multiple industries, I noticed the same pattern everywhere. Organizations weren't struggling because people lacked talent. They were struggling because critical knowledge was scattered across conversations, paper files, sticky notes, emails, and employee memory.
+          </p>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+            Artificial intelligence offered an opportunity to change that—but only if it was implemented thoughtfully. SMRG Consulting was created to help organizations preserve institutional knowledge, reduce operational friction, and build practical AI systems that support the people doing the work every day.
+          </p>
         </div>
       </section>
     </>

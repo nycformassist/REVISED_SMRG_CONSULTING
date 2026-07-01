@@ -1,0 +1,28 @@
+:root { --primary-color: #0f172a; --accent-color: #2563eb; --text-main: #334155; --text-light: #64748b; --bg-light: #f8fafc; --white: #ffffff; --border: #e2e8f0; --font-main: 'Inter', system-ui, sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-main); color: var(--text-main); background-color: var(--bg-light); line-height: 1.6; }
+h1, h2, h3 { color: var(--primary-color); margin-bottom: 1rem; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+section { padding: 5rem 0; }
+.bg-dark { background-color: var(--primary-color); color: var(--white); }
+.bg-dark h1, .bg-dark p { color: var(--white); }
+.bg-white { background-color: var(--white); }
+.bg-light { background-color: var(--bg-light); }
+header { background-color: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); background: none; border: none; cursor: pointer; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links button { background: none; border: none; color: var(--text-main); font-weight: 500; cursor: pointer; font-family: inherit; }
+.nav-links button:hover { color: var(--accent-color); }
+.btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; cursor: pointer; border: 2px solid transparent; }
+.btn-primary { background-color: var(--accent-color); color: var(--white); }
+.btn-outline { background-color: transparent; border-color: var(--white); color: var(--white); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.card { background: var(--white); padding: 2rem; border-radius: 8px; border: 1px solid var(--border); }
+.form-group { margin-bottom: 1.5rem; }
+.form-label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+.form-control { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; }
+footer { background-color: var(--primary-color); color: var(--white); padding: 4rem 0 2rem; text-align: center; }
+.footer-nav { display: flex; justify-content: center; gap: 1.5rem; list-style: none; margin: 2rem 0; }
+.footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; }
+.footer-nav button:hover { color: var(--white); }

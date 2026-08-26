@@ -53,11 +53,6 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
           <p style={{ marginTop: '1rem', fontSize: '0.85rem', color: colors.secondary }}>
             No generic chatbot demo. See RRU applied to a real estate scenario.
           </p>
-          
-          {/* Placeholder for actual RRU output screenshot */}
-          <div style={{ marginTop: '4rem', background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: '8px', padding: '2rem', height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: colors.secondary, fontWeight: 500 }}>
-            [ RRU Output Screenshot Displayed Here ]
-          </div>
         </div>
       </section>
 

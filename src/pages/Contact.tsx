@@ -69,10 +69,6 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
             <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
               Request a live demonstration, and we will show you how an SMRG operational utility can transform your unstructured inquiries into decision-ready intelligence.
             </p>
-            <div style={{ padding: '1.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
-              <p style={{ fontWeight: 700, margin: 0, fontSize: '0.9rem', color: colors.secondary, textTransform: 'uppercase' }}>Direct Contact</p>
-              <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '0.5rem 0 0 0' }}>saintmartin.revenuegroup@gmail.com</p>
-            </div>
           </div>
 
           {/* Right Column: Intake Form */}
@@ -89,6 +85,11 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                 <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Corporate Email</label>
                 <input type="email" name="email" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
               </div>
+
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Phone Number (Optional)</label>
+                <input type="tel" name="phone" placeholder="e.g. (555) 000-0000" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+              </div>
               
               <div style={{ marginBottom: '1rem' }}>
                 <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Company / Organization Name</label>
@@ -100,8 +101,8 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                 
                 <div style={{ marginBottom: '1rem' }}>
                   <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Solution of Interest</label>
-                  <select name="product_interest" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
-                    <option value="" disabled selected>Select a utility...</option>
+                  <select name="product_interest" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                    <option value="" disabled>Select a utility...</option>
                     <option value="RRU">RRU™ (Real Estate Readiness)</option>
                     <option value="LIRU">LIRU™ (Legal Intake)</option>
                     <option value="IRU">IRU™ (Immigration Intake)</option>
@@ -117,8 +118,8 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                 
                 <div>
                   <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Team Size</label>
-                  <select name="team_size" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
-                    <option value="" disabled selected>Select...</option>
+                  <select name="team_size" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                    <option value="" disabled>Select...</option>
                     <option value="1-10">1-10 Employees</option>
                     <option value="11-50">11-50 Employees</option>
                     <option value="50+">50+ Employees</option>

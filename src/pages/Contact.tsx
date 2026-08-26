@@ -1,11 +1,21 @@
 import { useState } from 'react';
 
-export default function Contact() {
+export default function Contact({ setPage }: { setPage?: (page: string) => void }) {
   const [status, setStatus] = useState('');
+  
+  // Enterprise styling variables
+  const colors = {
+    primary: '#111827',
+    secondary: '#374151',
+    accent: '#2563EB',
+    background: '#FFFFFF',
+    surface: '#F9FAFB',
+    border: '#E5E7EB',
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('Processing diagnostic payload...');
+    setStatus('Processing request...');
     const formData = new FormData(e.currentTarget);
     
     const payload = {
@@ -14,11 +24,11 @@ export default function Contact() {
       phone: formData.get('phone') || 'Not Provided',
       company: formData.get('company'),
       message: `
-        BUSINESS BLINDSPOT SCAN / OPERATIONS PULSE
+        SMRG CONSULTING DEMO REQUEST
         ------------------------------------------
-        Biggest operational friction: ${formData.get('friction')}
-        Current tech stack state: ${formData.get('tech_state')}
-        Team size: ${formData.get('team_size')}
+        Product Interest: ${formData.get('product_interest')}
+        Current Workflow Friction: ${formData.get('friction')}
+        Team Size: ${formData.get('team_size')}
       `
     };
 
@@ -32,61 +42,109 @@ export default function Contact() {
       const data = await response.json();
       
       if (response.ok) {
-        setStatus('Scan initiated. Our team will contact you with the next phase.');
+        setStatus('Request received. Our team will contact you shortly to schedule your demonstration.');
         (e.target as HTMLFormElement).reset();
       } else {
-        // Display the explicit server error on screen
         setStatus(`Error: ${data.error || 'Server rejected response without error details.'}`);
       }
     } catch (err: any) {
-      setStatus(`Network tracking connection error: ${err.message || err}`);
+      setStatus(`Connection error: ${err.message || err}`);
     }
   };
 
   return (
-    <section className="bg-white">
-      <div className="container" style={{ maxWidth: '600px' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>Business Blindspot Scan™</h2>
-        <p style={{ textAlign: 'center', color: 'var(--text-light)', marginBottom: '2rem' }}>
-          Initiate your Operations Pulse™ by providing your baseline vectors below.
-        </p>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group"><label className="form-label">Full Name</label><input type="text" name="name" className="form-control" required /></div>
-          <div className="form-group"><label className="form-label">Email Address</label><input type="email" name="email" className="form-control" required /></div>
-          <div className="form-group"><label className="form-label">Company Name</label><input type="text" name="company" className="form-control" required /></div>
+    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6, background: colors.surface, minHeight: '80vh' }}>
+      
+      <section style={{ padding: '6rem 1rem' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>
           
-          <div style={{ background: 'var(--bg-light)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border)', marginBottom: '1.5rem', marginTop: '1.5rem' }}>
-            <h3 style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>Diagnostic Baselines</h3>
-            <div className="form-group">
-              <label className="form-label">Where is your biggest operational friction?</label>
-              <input type="text" name="friction" className="form-control" required placeholder="e.g., Onboarding, document management..." />
-            </div>
-            <div className="form-group">
-              <label className="form-label">How would you describe your current tech stack?</label>
-              <select name="tech_state" className="form-control" required defaultValue="">
-                <option value="" disabled>Select...</option>
-                <option value="Fragmented">Fragmented (Too many apps that don't talk)</option>
-                <option value="Outdated">Outdated (Legacy systems slowing us down)</option>
-                <option value="Underutilized">Underutilized (Paying for tools we don't use)</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label className="form-label">Estimated Team Size</label>
-              <select name="team_size" className="form-control" required defaultValue="">
-                <option value="" disabled>Select...</option>
-                <option value="1-10">1-10 Employees</option>
-                <option value="11-50">11-50 Employees</option>
-                <option value="50+">50+ Employees</option>
-              </select>
+          {/* Left Column: Context & Trust */}
+          <div>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+              Let's look at your workflow.
+            </h1>
+            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
+              Your organization already has an intake process. The question is whether that process is working for you. 
+            </p>
+            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
+              Request a live demonstration, and we will show you how an SMRG operational utility can transform your unstructured inquiries into decision-ready intelligence.
+            </p>
+            <div style={{ padding: '1.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
+              <p style={{ fontWeight: 700, margin: 0, fontSize: '0.9rem', color: colors.secondary, textTransform: 'uppercase' }}>Direct Contact</p>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '0.5rem 0 0 0' }}>saintmartin.revenuegroup@gmail.com</p>
             </div>
           </div>
 
-          <button type="submit" className="btn btn-primary" style={{ width: '100%', fontSize: '1.1rem' }}>
-            Launch Interactive Blindspot Scan™
-          </button>
-          {status && <p style={{ marginTop: '1rem', textAlign: 'center', fontWeight: 'bold', color: 'var(--accent-color)' }}>{status}</p>}
-        </form>
-      </div>
-    </section>
+          {/* Right Column: Intake Form */}
+          <div style={{ background: colors.background, padding: '2.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Request a Demonstration</h2>
+            <form onSubmit={handleSubmit}>
+              
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Full Name</label>
+                <input type="text" name="name" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+              </div>
+              
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Corporate Email</label>
+                <input type="email" name="email" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+              </div>
+              
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Company / Organization Name</label>
+                <input type="text" name="company" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+              </div>
+
+              <div style={{ padding: '1.5rem', background: colors.surface, borderRadius: '4px', border: `1px solid ${colors.border}`, margin: '1.5rem 0' }}>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem' }}>Operational Context</h3>
+                
+                <div style={{ marginBottom: '1rem' }}>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Solution of Interest</label>
+                  <select name="product_interest" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                    <option value="" disabled selected>Select a utility...</option>
+                    <option value="RRU">RRU™ (Real Estate Readiness)</option>
+                    <option value="LIRU">LIRU™ (Legal Intake)</option>
+                    <option value="IRU">IRU™ (Immigration Intake)</option>
+                    <option value="Childcare">Childcare OCC™</option>
+                    <option value="Custom">Custom Operational System</option>
+                  </select>
+                </div>
+
+                <div style={{ marginBottom: '1rem' }}>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>What is your primary intake friction?</label>
+                  <input type="text" name="friction" required placeholder="e.g., Incomplete forms, manual data entry..." style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                </div>
+                
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Team Size</label>
+                  <select name="team_size" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="1-10">1-10 Employees</option>
+                    <option value="11-50">11-50 Employees</option>
+                    <option value="50+">50+ Employees</option>
+                  </select>
+                </div>
+              </div>
+
+              <button 
+                type="submit" 
+                style={{ width: '100%', background: colors.primary, color: '#fff', padding: '1rem', borderRadius: '4px', border: 'none', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', transition: 'background 0.2s' }}
+                onMouseOver={(e) => e.currentTarget.style.background = colors.secondary}
+                onMouseOut={(e) => e.currentTarget.style.background = colors.primary}
+              >
+                REQUEST DEMONSTRATION
+              </button>
+              
+              {status && (
+                <div style={{ marginTop: '1rem', padding: '1rem', background: '#EFF6FF', color: colors.accent, borderRadius: '4px', border: '1px solid #BFDBFE', fontWeight: 600, fontSize: '0.9rem', textAlign: 'center' }}>
+                  {status}
+                </div>
+              )}
+            </form>
+          </div>
+          
+        </div>
+      </section>
+    </div>
   );
 }

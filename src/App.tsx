@@ -3,11 +3,16 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Services from './pages/Services';
 import Contact from './pages/Contact';
+// SMRG Operational Utility Suite
+import Rru from './pages/Rru';
 import Liru from './pages/Liru';
 import Iru from './pages/Iru';
 import Childcare from './pages/Childcare';
+import CustomSystems from './pages/CustomSystems';
+// Strategic Pages
+import Industries from './pages/Industries';
+import HowItWorks from './pages/HowItWorks';
 import Partner from './pages/Partner';
 
 export default function App() {
@@ -15,14 +20,23 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
+      // Core Pages
       case 'home': return <Home setPage={setCurrentPage} />;
-      case 'about': return <About />;
-      case 'services': return <Services setPage={setCurrentPage} />;
+      case 'about': return <About setPage={setCurrentPage} />;
+      case 'how-it-works': return <HowItWorks setPage={setCurrentPage} />;
+      case 'contact': return <Contact setPage={setCurrentPage} />;
+      
+      // Product Portfolio
+      case 'rru': return <Rru setPage={setCurrentPage} />;
       case 'liru': return <Liru setPage={setCurrentPage} />;
       case 'iru': return <Iru setPage={setCurrentPage} />;
       case 'childcare': return <Childcare setPage={setCurrentPage} />;
-      case 'partner': return <Partner />;
-      case 'contact': return <Contact />;
+      case 'custom-systems': return <CustomSystems setPage={setCurrentPage} />;
+      
+      // Market Categories
+      case 'industries': return <Industries setPage={setCurrentPage} />;
+      case 'partner': return <Partner setPage={setCurrentPage} />;
+      
       default: return <Home setPage={setCurrentPage} />;
     }
   };

@@ -21,10 +21,20 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'SMRG Diagnostics <onboarding@resend.dev>',
-        to: 'support@smrgconsulting.com',
-        subject: `SMRG Blindspot Scan: ${company}`,
-        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\n\nDetails:\n${message}`
+        from: 'SMRG Consulting <onboarding@resend.dev>',
+        to: ['Healthcarebyvalentine@gmail.com'],
+        subject: `New Demonstration Request: ${company} (${name})`,
+        text: `
+          New SMRG Consulting Demo Request Received:
+          
+          Name: ${name}
+          Email: ${email}
+          Phone: ${phone || 'Not Provided'}
+          Company: ${company}
+          
+          Details:
+          ${message}
+        `
       })
     });
 

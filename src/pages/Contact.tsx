@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SEO from '../components/SEO';
 
 export default function Contact({ setPage }: { setPage?: (page: string) => void }) {
   const [status, setStatus] = useState('');
@@ -54,6 +55,10 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6, background: colors.surface, minHeight: '80vh' }}>
+      <SEO 
+        title="Request a Demonstration | SMRG Consulting" 
+        description="Schedule a live demonstration of SMRG Consulting's enterprise AI intake utilities and operational readiness systems."
+      />
       
       <section style={{ padding: '6rem 1rem' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>

@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Iru({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -23,6 +25,10 @@ export default function Iru({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="IRU™ | Immigration Intake Readiness Utility & Non-Profit Operations" 
+        description="Streamline high-volume immigration intake and surface structured petitioner intelligence for community organizations without overwhelming staff capacity."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>

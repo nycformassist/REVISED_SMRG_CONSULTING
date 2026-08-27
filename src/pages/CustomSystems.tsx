@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function CustomSystems({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -23,6 +25,10 @@ export default function CustomSystems({ setPage }: { setPage: (page: string) => 
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="Custom Operational Systems & Enterprise Software Engineering" 
+        description="Design, engineer, and deploy purpose-built operational utilities and intelligent data-capture pipelines tailored to your proprietary business workflows."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

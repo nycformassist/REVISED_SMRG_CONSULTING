@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Partner({ setPage }: { setPage?: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -23,6 +25,10 @@ export default function Partner({ setPage }: { setPage?: (page: string) => void 
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="Partner Program | SMRG Consulting Enterprise Network" 
+        description="Join the SMRG Consulting partner network. Help organizations plug operational leaks with specialized software utilities while building a scalable recurring income stream."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

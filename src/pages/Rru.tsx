@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Rru({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables for consistency
   const colors = {
@@ -35,6 +37,10 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="RRU™ | Real Estate Readiness & Inbound Qualification Utility" 
+        description="Turn real estate inquiries into structured buyer intelligence with SMRG Consulting's AI-powered conversational readiness utility."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>

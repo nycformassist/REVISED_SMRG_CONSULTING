@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function HowItWorks({ setPage }: { setPage: (page: string) => void }) {
   const colors = {
     primary: '#111827',
@@ -22,6 +24,10 @@ export default function HowItWorks({ setPage }: { setPage: (page: string) => voi
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="Our Methodology & Intelligence Sequence | SMRG Consulting" 
+        description="Explore the 5-phase operational methodology behind SMRG's enterprise AI intake utilities: Engage, Understand, Analyze, Structure, and Prioritize."
+      />
       
       {/* HERO SECTION */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

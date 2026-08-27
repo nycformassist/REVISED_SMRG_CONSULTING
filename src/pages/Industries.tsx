@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Industries({ setPage }: { setPage: (page: string) => void }) {
   const colors = {
     primary: '#111827',
@@ -20,6 +22,10 @@ export default function Industries({ setPage }: { setPage: (page: string) => voi
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="Industries We Serve | Enterprise Operational Utilities" 
+        description="Explore SMRG Consulting's vertical-specific AI intake and operational readiness solutions for Real Estate, Legal Practices, Immigration, and Childcare."
+      />
       
       {/* HERO SECTION */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

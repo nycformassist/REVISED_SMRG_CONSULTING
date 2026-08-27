@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Home({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -35,6 +37,10 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="SMRG Consulting | Enterprise Operational Utilities & AI Intake Systems" 
+        description="We design intelligent operational utilities that transform messy information, repetitive workflows, and human intake into structured, actionable operational intelligence."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '7rem 1rem', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

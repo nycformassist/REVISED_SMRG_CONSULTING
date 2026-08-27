@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Childcare({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -23,6 +25,10 @@ export default function Childcare({ setPage }: { setPage: (page: string) => void
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="Childcare OCC™ | Operational Capacity Controller for Childcare Facilities" 
+        description="Organize parent-provided intake data and translate it into structured, accessible operational guidance for your childcare center staff."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>

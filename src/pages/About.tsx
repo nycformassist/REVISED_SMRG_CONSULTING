@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function About({ setPage }: { setPage?: (page: string) => void }) {
   // Enterprise styling variables matching the SMRG brand architecture
   const colors = {
@@ -24,6 +26,10 @@ export default function About({ setPage }: { setPage?: (page: string) => void })
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="About Our Philosophy & Operational Architecture" 
+        description="Learn how SMRG Consulting audits workflows, eliminates administrative friction, and engineers intelligent intake systems for modern enterprises."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>

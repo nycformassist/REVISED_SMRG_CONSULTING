@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function Liru({ setPage }: { setPage: (page: string) => void }) {
   // Enterprise styling variables
   const colors = {
@@ -23,6 +25,10 @@ export default function Liru({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
+      <SEO 
+        title="LIRU™ | Legal Intake Readiness Utility & Practice Management" 
+        description="Transform prospective client inquiries into structured, decision-ready information before consultations reach your legal team."
+      />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>

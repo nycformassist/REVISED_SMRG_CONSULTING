@@ -29,6 +29,8 @@ body {
   background-size: 40px 40px !important;
   background-attachment: fixed !important;
   line-height: 1.6; 
+  /* Padding-top guarantees page content never hides behind the fixed header */
+  padding-top: 90px !important; 
 }
 
 /* 2. GLOBAL DARK MODE OVERRIDES */
@@ -65,16 +67,28 @@ section { padding: 5rem 0; }
 
 /* --- HEADER FIX & OVERLAP PREVENTION --- */
 header { 
-  background-color: rgba(2, 6, 23, 0.95) !important;
+  background-color: rgba(2, 6, 23, 0.98) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border) !important; 
-  position: sticky !important; 
+  position: fixed !important; /* Fixed layer completely isolates it from content flow */
   top: 0 !important; 
-  z-index: 9999 !important; /* Forces header cleanly above hero content */
+  left: 0 !important;
+  width: 100% !important;
+  height: 90px !important; /* Rigid height container for submenus/dropdowns */
+  z-index: 99999 !important; /* Maximum stacking priority */
 }
 
-.nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; }
+.nav-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 100%;
+  padding: 0 2rem; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
 .logo { font-size: 1.5rem; font-weight: 800; background: none; border: none; cursor: pointer; color: #ffffff !important; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links button { background: none; border: none; color: var(--text-main); font-weight: 500; cursor: pointer; font-family: inherit; transition: color 0.2s;}
@@ -167,6 +181,3 @@ footer { background-color: var(--primary-color) !important; border-top: 1px soli
 .footer-nav { display: flex; justify-content: center; gap: 1.5rem; list-style: none; margin: 2rem 0; }
 .footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; transition: color 0.2s;}
 .footer-nav button:hover { color: var(--accent-color) !important; }
-```eof
-
-Replace the entire contents of your **`src/index.css`** file with this complete block, save, and your dropdown menus will now cleanly float over the page without overlapping text. Let me know how it builds!

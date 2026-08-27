@@ -29,8 +29,8 @@ body {
   background-size: 40px 40px !important;
   background-attachment: fixed !important;
   line-height: 1.6; 
-  /* Padding-top guarantees page content never hides behind the fixed header */
-  padding-top: 90px !important; 
+  /* Perfect calculated spacing to clear header and fully opened dropdown menus */
+  padding-top: 240px !important; 
 }
 
 /* 2. GLOBAL DARK MODE OVERRIDES */
@@ -63,7 +63,7 @@ div[style*="color: rgb(37, 99, 235)"] {
 }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-section { padding: 5rem 0; }
+section { padding: 4rem 0; }
 
 /* --- HEADER FIX & OVERLAP PREVENTION --- */
 header { 

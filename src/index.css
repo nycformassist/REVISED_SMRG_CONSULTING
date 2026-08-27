@@ -1,28 +1,154 @@
-:root { --primary-color: #0f172a; --accent-color: #2563eb; --text-main: #334155; --text-light: #64748b; --bg-light: #f8fafc; --white: #ffffff; --border: #e2e8f0; --font-main: 'Inter', system-ui, sans-serif; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--font-main); color: var(--text-main); background-color: var(--bg-light); line-height: 1.6; }
-h1, h2, h3 { color: var(--primary-color); margin-bottom: 1rem; }
+:root {
+  /* Web 3.0 / AI Studio Dark Palette */
+  --primary-color: #020617;       /* Deep space black */
+  --accent-color: #38bdf8;        /* Electric AI cyan */
+  --accent-glow: 0 0 25px rgba(56, 189, 248, 0.4);
+  --text-main: #f8fafc;           /* Crisp white for readability */
+  --text-light: #94a3b8;          /* Slate for secondary text */
+  --bg-light: rgba(15, 23, 42, 0.4); 
+  --white: #ffffff;
+  --border: rgba(255, 255, 255, 0.08); /* Subtle glass edge */
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+/* 1. THE LUMINOUS INTELLIGENCE GRID */
+body { 
+  font-family: var(--font-main); 
+  color: var(--text-main) !important; 
+  background-color: var(--primary-color) !important; 
+  /* Generative AI Grid Overlay */
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+  background-attachment: fixed !important;
+  line-height: 1.6; 
+}
+
+/* 2. GLOBAL DARK MODE OVERRIDES */
+/* This automatically forces your inline React colors into dark mode */
+section, div {
+  border-color: var(--border) !important;
+}
+
+section[style*="background"], 
+div[style*="background: #FFFFFF"], 
+div[style*="background: rgb(255, 255, 255)"],
+div[style*="background: #F9FAFB"] {
+  background-color: transparent !important;
+}
+
+h1, h2, h3, h4, .logo { 
+  color: var(--white) !important; 
+  letter-spacing: -0.02em;
+}
+
+p, li, span {
+  color: var(--text-light) !important;
+}
+
+/* Highlight specific accent text (like RRU™ and Feature tags) */
+div[style*="color: #2563EB"], 
+div[style*="color: rgb(37, 99, 235)"] {
+  color: var(--accent-color) !important;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.4) !important;
+  font-weight: 800;
+}
+
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 section { padding: 5rem 0; }
-.bg-dark { background-color: var(--primary-color); color: var(--white); }
-.bg-dark h1, .bg-dark p { color: var(--white); }
-.bg-white { background-color: var(--white); }
-.bg-light { background-color: var(--bg-light); }
-header { background-color: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+
+header { 
+  background-color: rgba(2, 6, 23, 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border) !important; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+}
+
 .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; }
-.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); background: none; border: none; cursor: pointer; }
+.logo { font-size: 1.5rem; font-weight: 800; background: none; border: none; cursor: pointer; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links button { background: none; border: none; color: var(--text-main); font-weight: 500; cursor: pointer; font-family: inherit; }
-.nav-links button:hover { color: var(--accent-color); }
-.btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; cursor: pointer; border: 2px solid transparent; }
-.btn-primary { background-color: var(--accent-color); color: var(--white); }
-.btn-outline { background-color: transparent; border-color: var(--white); color: var(--white); }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
-.card { background: var(--white); padding: 2rem; border-radius: 8px; border: 1px solid var(--border); }
+.nav-links button { background: none; border: none; color: var(--text-main); font-weight: 500; cursor: pointer; font-family: inherit; transition: color 0.2s;}
+.nav-links button:hover { color: var(--accent-color) !important; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
+
+/* 3. GLASSMORPHISM DATA CARDS */
+/* Automatically applies high-tech glass effects to your existing boxed containers */
+.card, 
+div[style*="border-radius: 8px"],
+div[style*="border-radius: 8px"] > div {
+  background: rgba(15, 23, 42, 0.5) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Glowing hover effect for data pipeline feel */
+.card:hover, 
+div[style*="border-radius: 8px"]:hover {
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  box-shadow: var(--accent-glow) !important;
+  transform: translateY(-2px);
+}
+
+/* 4. METALLIC/NEON BUTTONS */
+button[style*="background: #111827"],
+button[style*="background: rgb(17, 24, 39)"],
+.btn-primary { 
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(37, 99, 235, 0.9)) !important; 
+  color: var(--white) !important; 
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+button[style*="background: #111827"]:hover,
+button[style*="background: rgb(17, 24, 39)"]:hover,
+.btn-primary:hover {
+  box-shadow: var(--accent-glow) !important;
+  transform: scale(1.02);
+}
+
+.btn-outline,
+button[style*="background: transparent"] { 
+  background-color: transparent !important; 
+  border-color: var(--accent-color) !important; 
+  color: var(--accent-color) !important; 
+}
+.btn-outline:hover,
+button[style*="background: transparent"]:hover {
+  background-color: rgba(56, 189, 248, 0.1) !important;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2) !important;
+}
+
+/* Forms */
 .form-group { margin-bottom: 1.5rem; }
-.form-label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
-.form-control { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; }
-footer { background-color: var(--primary-color); color: var(--white); padding: 4rem 0 2rem; text-align: center; }
+.form-label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main) !important; }
+.form-control { 
+  width: 100%; 
+  padding: 0.75rem; 
+  background: rgba(0,0,0,0.2) !important; 
+  border: 1px solid var(--border) !important; 
+  border-radius: 6px; 
+  color: var(--white) !important; 
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2) !important;
+}
+
+footer { background-color: var(--primary-color) !important; border-top: 1px solid var(--border); color: var(--white); padding: 4rem 0 2rem; text-align: center; }
 .footer-nav { display: flex; justify-content: center; gap: 1.5rem; list-style: none; margin: 2rem 0; }
-.footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; }
-.footer-nav button:hover { color: var(--white); }
+.footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; transition: color 0.2s;}
+.footer-nav button:hover { color: var(--accent-color) !important; }

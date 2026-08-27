@@ -364,4 +364,3 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
     </div>
   );
 }
-```eof

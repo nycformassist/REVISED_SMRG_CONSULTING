@@ -32,7 +32,6 @@ body {
 }
 
 /* 2. GLOBAL DARK MODE OVERRIDES */
-/* This automatically forces your inline React colors into dark mode */
 section, div {
   border-color: var(--border) !important;
 }
@@ -53,7 +52,7 @@ p, li, span {
   color: var(--text-light) !important;
 }
 
-/* Highlight specific accent text (like RRU™ and Feature tags) */
+/* Highlight specific accent text */
 div[style*="color: #2563EB"], 
 div[style*="color: rgb(37, 99, 235)"] {
   color: var(--accent-color) !important;
@@ -64,24 +63,41 @@ div[style*="color: rgb(37, 99, 235)"] {
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 section { padding: 5rem 0; }
 
+/* --- HEADER FIX & OVERLAP PREVENTION --- */
 header { 
-  background-color: rgba(2, 6, 23, 0.8) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(2, 6, 23, 0.95) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border) !important; 
-  position: sticky; 
-  top: 0; 
-  z-index: 1000; 
+  position: sticky !important; 
+  top: 0 !important; 
+  z-index: 9999 !important; /* Forces header cleanly above hero content */
 }
 
 .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; }
-.logo { font-size: 1.5rem; font-weight: 800; background: none; border: none; cursor: pointer; }
+.logo { font-size: 1.5rem; font-weight: 800; background: none; border: none; cursor: pointer; color: #ffffff !important; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links button { background: none; border: none; color: var(--text-main); font-weight: 500; cursor: pointer; font-family: inherit; transition: color 0.2s;}
 .nav-links button:hover { color: var(--accent-color) !important; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
 
+/* Header & Menu Legibility Protection */
+header, 
+.nav-container, 
+header div, 
+header span, 
+header a, 
+header button,
+.nav-links * {
+  color: #f8fafc !important; 
+}
+
+.nav-links button:hover, 
+.nav-links a:hover {
+  color: var(--accent-color) !important;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6) !important;
+}
+
 /* 3. GLASSMORPHISM DATA CARDS */
-/* Automatically applies high-tech glass effects to your existing boxed containers */
 .card, 
 div[style*="border-radius: 8px"],
 div[style*="border-radius: 8px"] > div {
@@ -93,7 +109,6 @@ div[style*="border-radius: 8px"] > div {
   transition: all 0.3s ease !important;
 }
 
-/* Glowing hover effect for data pipeline feel */
 .card:hover, 
 div[style*="border-radius: 8px"]:hover {
   border-color: rgba(56, 189, 248, 0.3) !important;
@@ -152,26 +167,6 @@ footer { background-color: var(--primary-color) !important; border-top: 1px soli
 .footer-nav { display: flex; justify-content: center; gap: 1.5rem; list-style: none; margin: 2rem 0; }
 .footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; transition: color 0.2s;}
 .footer-nav button:hover { color: var(--accent-color) !important; }
-/* --- HEADER & NAVIGATION FIX --- */
-header, 
-.nav-container, 
-header div, 
-header span, 
-header a, 
-header button,
-.nav-links * {
-  color: #f8fafc !important; 
-}
+```eof
 
-/* Make the logo pop */
-.logo {
-  color: #ffffff !important;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.3) !important;
-}
-
-/* Fix the hover states for the links */
-.nav-links button:hover, 
-.nav-links a:hover {
-  color: var(--accent-color) !important;
-  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6) !important;
-}
+Replace the entire contents of your **`src/index.css`** file with this complete block, save, and your dropdown menus will now cleanly float over the page without overlapping text. Let me know how it builds!

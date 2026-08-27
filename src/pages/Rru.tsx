@@ -42,6 +42,40 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
         description="Turn real estate inquiries into structured buyer intelligence with SMRG Consulting's AI-powered conversational readiness utility."
       />
       
+      {/* GENERATIVE AI ANIMATION STYLES */}
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes pulse-engine {
+          0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); }
+          50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(56, 189, 248, 0.8); }
+        }
+        @keyframes data-flow {
+          0% { left: -30%; opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { left: 100%; opacity: 0; }
+        }
+        .rru-engine-node {
+          animation: pulse-engine 3s infinite ease-in-out;
+        }
+        .data-stream {
+          position: relative;
+          overflow: hidden;
+        }
+        .data-packet {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40%;
+          height: 2px;
+          background: #38bdf8;
+          box-shadow: 0 0 12px #38bdf8;
+          animation: data-flow 1.5s infinite linear;
+        }
+        .data-packet-delayed {
+          animation-delay: 0.75s;
+        }
+      `}} />
+      
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -52,6 +86,35 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem auto' }}>
             An AI-powered conversational qualification and readiness utility designed to help real estate organizations understand, prioritize, and act on inbound opportunities.
           </p>
+
+          {/* VISUAL DATA PIPELINE (Pure CSS Art) */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 3.5rem auto', gap: '1rem', maxWidth: '600px', flexWrap: 'wrap' }}>
+            {/* Raw Input Node */}
+            <div style={{ padding: '0.75rem 1.25rem', border: '1px dashed #475569', borderRadius: '6px', color: '#94a3b8', fontSize: '0.85rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+              Raw Inquiry
+            </div>
+            
+            {/* Stream 1 */}
+            <div className="data-stream" style={{ width: '60px', height: '2px', background: 'rgba(255,255,255,0.1)' }}>
+              <div className="data-packet"></div>
+            </div>
+
+            {/* Core Engine Node */}
+            <div className="rru-engine-node" style={{ background: 'rgba(15, 23, 42, 0.9)', border: '1px solid #38bdf8', padding: '1rem 2rem', borderRadius: '8px', color: '#38bdf8', fontWeight: 900, textShadow: '0 0 10px rgba(56, 189, 248, 0.5)', letterSpacing: '0.05em' }}>
+              RRU™ ENGINE
+            </div>
+
+            {/* Stream 2 */}
+            <div className="data-stream" style={{ width: '60px', height: '2px', background: 'rgba(255,255,255,0.1)' }}>
+              <div className="data-packet data-packet-delayed"></div>
+            </div>
+
+            {/* Structured Output Node */}
+            <div style={{ padding: '0.75rem 1.25rem', border: '1px solid #475569', borderRadius: '6px', color: '#f8fafc', fontSize: '0.85rem', background: 'rgba(255,255,255,0.05)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+              Structured Brief
+            </div>
+          </div>
+
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => setPage('contact')} style={ctaPrimary}>BOOK A LIVE DEMO</button>
             <button style={ctaSecondary}>SEE HOW IT WORKS</button>

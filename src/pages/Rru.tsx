@@ -42,43 +42,59 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
         description="Turn real estate inquiries into structured buyer intelligence with SMRG Consulting's AI-powered conversational readiness utility."
       />
       
-      {/* GENERATIVE AI ANIMATION STYLES */}
+      {/* ADVANCED SPECTACULAR WEB 3.0 / AI GRAPHIC STYLING */}
       <style dangerouslySetInnerHTML={{__html: `
-        @keyframes pulse-engine {
-          0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); }
-          50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(56, 189, 248, 0.8); }
+        @keyframes spectacular-pulse {
+          0%, 100% { 
+            transform: scale(1); 
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3), inset 0 0 15px rgba(56, 189, 248, 0.2); 
+          }
+          50% { 
+            transform: scale(1.03); 
+            box-shadow: 0 0 45px rgba(56, 189, 248, 0.7), inset 0 0 25px rgba(56, 189, 248, 0.5); 
+          }
         }
-        @keyframes data-flow {
-          0% { left: -30%; opacity: 0; }
-          10% { opacity: 1; }
-          90% { opacity: 1; }
-          100% { left: 100%; opacity: 0; }
+        @keyframes beam-travel {
+          0% { transform: translateX(-100%); opacity: 0; }
+          20% { opacity: 1; }
+          80% { opacity: 1; }
+          100% { transform: translateX(300%); opacity: 0; }
         }
-        .rru-engine-node {
-          animation: pulse-engine 3s infinite ease-in-out;
+        @keyframes float-particle {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-6px); }
         }
-        .data-stream {
+        .spectacular-core {
+          animation: spectacular-pulse 4s infinite ease-in-out;
+        }
+        .beam-track {
           position: relative;
           overflow: hidden;
+          background: rgba(255, 255, 255, 0.08);
+          height: 3px;
+          border-radius: 2px;
         }
-        .data-packet {
+        .light-beam {
           position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 40%;
-          height: 2px;
-          background: #38bdf8;
+          top: 0;
+          left: 0;
+          width: 35%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, #38bdf8, #ffffff, #38bdf8, transparent);
           box-shadow: 0 0 12px #38bdf8;
-          animation: data-flow 1.5s infinite linear;
+          animation: beam-travel 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .data-packet-delayed {
-          animation-delay: 0.75s;
+        .light-beam-delayed {
+          animation-delay: 1s;
+        }
+        .floating-node {
+          animation: float-particle 3s infinite ease-in-out;
         }
       `}} />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '950px', margin: '0 auto' }}>
           <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem' }}>RRU™</div>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
             Turn Real Estate Inquiries Into Buyer Intelligence.
@@ -87,31 +103,77 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
             An AI-powered conversational qualification and readiness utility designed to help real estate organizations understand, prioritize, and act on inbound opportunities.
           </p>
 
-          {/* VISUAL DATA PIPELINE (Pure CSS Art) */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 3.5rem auto', gap: '1rem', maxWidth: '600px', flexWrap: 'wrap' }}>
-            {/* Raw Input Node */}
-            <div style={{ padding: '0.75rem 1.25rem', border: '1px dashed #475569', borderRadius: '6px', color: '#94a3b8', fontSize: '0.85rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-              Raw Inquiry
-            </div>
-            
-            {/* Stream 1 */}
-            <div className="data-stream" style={{ width: '60px', height: '2px', background: 'rgba(255,255,255,0.1)' }}>
-              <div className="data-packet"></div>
-            </div>
+          {/* SPECTACULAR AI ARCHITECTURE VISUALIZATION GRAPHIC */}
+          <div style={{ 
+            background: 'linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(15, 23, 42, 0.95))',
+            border: '1px solid rgba(56, 189, 248, 0.3)',
+            borderRadius: '16px',
+            padding: '2.5rem 1.5rem',
+            margin: '0 auto 3.5rem auto',
+            maxWidth: '820px',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)',
+            position: 'relative'
+          }}>
+            {/* Subtle background grid pattern inside graphic */}
+            <div style={{
+              position: 'absolute', inset: 0, borderRadius: '16px', pointerEvents: 'none',
+              backgroundImage: 'linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px)',
+              backgroundSize: '20px 20px', opacity: 0.5
+            }}></div>
 
-            {/* Core Engine Node */}
-            <div className="rru-engine-node" style={{ background: 'rgba(15, 23, 42, 0.9)', border: '1px solid #38bdf8', padding: '1rem 2rem', borderRadius: '8px', color: '#38bdf8', fontWeight: 900, textShadow: '0 0 10px rgba(56, 189, 248, 0.5)', letterSpacing: '0.05em' }}>
-              RRU™ ENGINE
-            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'center', gap: '1rem', position: 'relative', zIndex: 2 }}>
+              
+              {/* NODE 1: Inbound Raw Inquiry */}
+              <div className="floating-node" style={{ 
+                background: 'rgba(15, 23, 42, 0.8)', 
+                border: '1px solid rgba(255, 255, 255, 0.15)', 
+                borderRadius: '10px', 
+                padding: '1.25rem 1rem',
+                textAlign: 'left',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+              }}>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#38bdf8', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>STAGE 01</div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#ffffff' }}>Raw Inquiries</div>
+                <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.25rem' }}>Emails, Forms & Calls</div>
+              </div>
 
-            {/* Stream 2 */}
-            <div className="data-stream" style={{ width: '60px', height: '2px', background: 'rgba(255,255,255,0.1)' }}>
-              <div className="data-packet data-packet-delayed"></div>
-            </div>
+              {/* BEAM TRACK 1 */}
+              <div className="beam-track" style={{ width: '60px' }}>
+                <div className="light-beam"></div>
+              </div>
 
-            {/* Structured Output Node */}
-            <div style={{ padding: '0.75rem 1.25rem', border: '1px solid #475569', borderRadius: '6px', color: '#f8fafc', fontSize: '0.85rem', background: 'rgba(255,255,255,0.05)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-              Structured Brief
+              {/* NODE 2: RRU Core Engine */}
+              <div className="spectacular-core" style={{ 
+                background: 'radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(2, 6, 23, 0.95) 80%)',
+                border: '2px solid #38bdf8', 
+                borderRadius: '12px', 
+                padding: '1.5rem 1.25rem',
+                textAlign: 'center'
+              }}>
+                <div style={{ fontSize: '0.65rem', fontWeight: 900, color: '#38bdf8', letterSpacing: '0.15em', marginBottom: '0.2rem' }}>INTELLIGENCE LAYER</div>
+                <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#ffffff', textShadow: '0 0 10px rgba(56,189,248,0.8)' }}>RRU™ ENGINE</div>
+                <div style={{ fontSize: '0.7rem', color: '#94a3b8', marginTop: '0.2rem' }}>Processing Pipeline</div>
+              </div>
+
+              {/* BEAM TRACK 2 */}
+              <div className="beam-track" style={{ width: '60px' }}>
+                <div className="light-beam light-beam-delayed"></div>
+              </div>
+
+              {/* NODE 3: Decision-Ready Output */}
+              <div className="floating-node" style={{ 
+                background: 'rgba(15, 23, 42, 0.8)', 
+                border: '1px solid rgba(56, 189, 248, 0.4)', 
+                borderRadius: '10px', 
+                padding: '1.25rem 1rem',
+                textAlign: 'left',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+              }}>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#38bdf8', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>STAGE 03</div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#ffffff' }}>Structured Brief</div>
+                <div style={{ fontSize: '0.75rem', color: '#38bdf8', marginTop: '0.25rem' }}>Decision-Ready Data</div>
+              </div>
+
             </div>
           </div>
 
@@ -302,3 +364,4 @@ export default function Rru({ setPage }: { setPage: (page: string) => void }) {
     </div>
   );
 }
+```eof

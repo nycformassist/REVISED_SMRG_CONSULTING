@@ -152,3 +152,26 @@ footer { background-color: var(--primary-color) !important; border-top: 1px soli
 .footer-nav { display: flex; justify-content: center; gap: 1.5rem; list-style: none; margin: 2rem 0; }
 .footer-nav button { background: none; border: none; color: var(--text-light); cursor: pointer; transition: color 0.2s;}
 .footer-nav button:hover { color: var(--accent-color) !important; }
+/* --- HEADER & NAVIGATION FIX --- */
+header, 
+.nav-container, 
+header div, 
+header span, 
+header a, 
+header button,
+.nav-links * {
+  color: #f8fafc !important; 
+}
+
+/* Make the logo pop */
+.logo {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Fix the hover states for the links */
+.nav-links button:hover, 
+.nav-links a:hover {
+  color: var(--accent-color) !important;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6) !important;
+}

@@ -21,7 +21,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
   };
 
   return (
-    <header style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', backgroundColor: '#020617', position: 'sticky', top: 0, zIndex: 9999, minHeight: '80px', display: 'flex', alignItems: 'center' }}>
+    <header style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', backgroundColor: '#020617', position: 'fixed', top: 0, left: 0, width: '100%', height: '90px', zIndex: 99999, display: 'flex', alignItems: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1200px', width: '100%', margin: '0 auto', padding: '0 2rem' }}>
         
         {/* Brand Logo - Strong, confident typography */}
@@ -40,7 +40,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
             </li>
             
             {/* Solutions Dropdown */}
-            <li style={{ position: 'relative' }} onMouseLeave={() => setSolutionsOpen(false)}>
+            <li style={{ position: 'relative', paddingBottom: '15px', marginBottom: '-15px' }} onMouseLeave={() => setSolutionsOpen(false)}>
               <button 
                 onMouseEnter={() => setSolutionsOpen(true)}
                 onClick={() => setSolutionsOpen(!solutionsOpen)} 
@@ -51,7 +51,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
               {solutionsOpen && (
                 <div style={{ 
                   position: 'absolute', 
-                  top: 'calc(100% + 10px)', 
+                  top: 'calc(100% + 5px)', 
                   left: 0, 
                   background: '#0f172a', 
                   border: '1px solid rgba(56, 189, 248, 0.2)', 
@@ -62,7 +62,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                   minWidth: '300px', 
                   boxShadow: '0 20px 30px -10px rgba(0,0,0,0.5), 0 0 15px rgba(56, 189, 248, 0.1)',
                   backdropFilter: 'blur(16px)',
-                  overflow: 'hidden'
+                  overflow: 'hidden',
+                  paddingTop: '5px'
                 }}>
                   <button 
                     onClick={() => { setPage('rru'); setSolutionsOpen(false); }} 
@@ -109,7 +110,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
             </li>
 
             {/* Industries Dropdown */}
-            <li style={{ position: 'relative' }} onMouseLeave={() => setIndustriesOpen(false)}>
+            <li style={{ position: 'relative', paddingBottom: '15px', marginBottom: '-15px' }} onMouseLeave={() => setIndustriesOpen(false)}>
               <button 
                 onMouseEnter={() => setIndustriesOpen(true)}
                 onClick={() => setIndustriesOpen(!industriesOpen)} 
@@ -120,7 +121,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
               {industriesOpen && (
                 <div style={{ 
                   position: 'absolute', 
-                  top: 'calc(100% + 10px)', 
+                  top: 'calc(100% + 5px)', 
                   left: 0, 
                   background: '#0f172a', 
                   border: '1px solid rgba(56, 189, 248, 0.2)', 
@@ -131,7 +132,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                   minWidth: '240px', 
                   boxShadow: '0 20px 30px -10px rgba(0,0,0,0.5), 0 0 15px rgba(56, 189, 248, 0.1)',
                   backdropFilter: 'blur(16px)',
-                  overflow: 'hidden'
+                  overflow: 'hidden',
+                  paddingTop: '5px'
                 }}>
                   <button 
                     onClick={() => { setPage('industries'); setIndustriesOpen(false); }} 

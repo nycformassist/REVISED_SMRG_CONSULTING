@@ -6,11 +6,11 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
 
   // Enterprise typography and styling variables
   const navStyle = { background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem', color: '#374151' };
-  const dropdownItemStyle = { textAlign: 'left' as const, padding: '0.75rem 1rem', width: '100%', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 500, fontSize: '0.9rem', color: '#4B5563', borderBottom: '1px solid #F3F4F6' };
+  const dropdownItemStyle = { textAlign: 'left' as const, padding: '0.75rem 1rem', width: '100%', background: '#FFFFFF', border: 'none', cursor: 'pointer', fontWeight: 500, fontSize: '0.9rem', color: '#4B5563', borderBottom: '1px solid #F3F4F6' };
 
   return (
-    <header style={{ borderBottom: '1px solid #E5E7EB', padding: '1rem 0', background: '#FFFFFF', position: 'sticky', top: 0, zIndex: 1000 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+    <header style={{ borderBottom: '1px solid #E5E7EB', backgroundColor: '#FFFFFF', position: 'sticky', top: 0, zIndex: 9999, minHeight: '80px', display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1200px', width: '100%', margin: '0 auto', padding: '0 1rem' }}>
         
         {/* Brand Logo - Strong, confident typography */}
         <button
@@ -37,7 +37,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                 SOLUTIONS ▾
               </button>
               {solutionsOpen && (
-                <div style={{ position: 'absolute', top: '100%', left: 0, background: '#fff', border: '1px solid #E5E7EB', borderRadius: '4px', display: 'flex', flexDirection: 'column', zIndex: 1001, minWidth: '280px', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)' }}>
+                <div style={{ position: 'absolute', top: 'calc(100% + 15px)', left: 0, background: '#fff', border: '1px solid #E5E7EB', borderRadius: '4px', display: 'flex', flexDirection: 'column', zIndex: 10001, minWidth: '280px', boxShadow: '0 10px 25px -3px rgba(0,0,0,0.15)' }}>
                   <button onClick={() => { setPage('rru'); setSolutionsOpen(false); }} style={{...dropdownItemStyle, fontWeight: 700, color: '#111827'}}>RRU™ (Real Estate Readiness)</button>
                   <button onClick={() => { setPage('liru'); setSolutionsOpen(false); }} style={dropdownItemStyle}>LIRU™ (Legal Intake)</button>
                   <button onClick={() => { setPage('iru'); setSolutionsOpen(false); }} style={dropdownItemStyle}>IRU™ (Immigration Intake)</button>
@@ -57,7 +57,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                 INDUSTRIES ▾
               </button>
               {industriesOpen && (
-                <div style={{ position: 'absolute', top: '100%', left: 0, background: '#fff', border: '1px solid #E5E7EB', borderRadius: '4px', display: 'flex', flexDirection: 'column', zIndex: 1001, minWidth: '220px', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)' }}>
+                <div style={{ position: 'absolute', top: 'calc(100% + 15px)', left: 0, background: '#fff', border: '1px solid #E5E7EB', borderRadius: '4px', display: 'flex', flexDirection: 'column', zIndex: 10001, minWidth: '220px', boxShadow: '0 10px 25px -3px rgba(0,0,0,0.15)' }}>
                   <button onClick={() => { setPage('industries'); setIndustriesOpen(false); }} style={dropdownItemStyle}>Real Estate</button>
                   <button onClick={() => { setPage('industries'); setIndustriesOpen(false); }} style={dropdownItemStyle}>Legal</button>
                   <button onClick={() => { setPage('industries'); setIndustriesOpen(false); }} style={dropdownItemStyle}>Immigration / Nonprofit</button>

@@ -1,8 +1,18 @@
-{
+vercel_json_content = """{
   "rewrites": [
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
+    },
+    {
+      "has": [
+        {
+          "type": "host",
+          "value": "checkout.smrgconsulting.com"
+        }
+      ],
+      "source": "/(.*)",
+      "destination": "/checkout/index.html"
     },
     {
       "source": "/((?!api/).*)",
@@ -10,3 +20,8 @@
     }
   ]
 }
+"""
+
+with open('/mnt/data/vercel.json', 'w') as f:
+    f.write(vercel_json_content)
+print("Updated vercel.json created successfully.")

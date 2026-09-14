@@ -5,7 +5,17 @@
       "destination": "/sitemap.xml"
     },
     {
-      "source": "/((?!api/).*)",
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "checkout.smrgconsulting.com"
+        }
+      ],
+      "destination": "/checkout/index.html"
+    },
+    {
+      "source": "/((?!api/|checkout/).*)",
       "destination": "/index.html"
     }
   ]

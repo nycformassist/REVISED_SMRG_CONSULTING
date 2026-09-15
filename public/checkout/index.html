@@ -29,7 +29,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -172,7 +172,7 @@
         .pricing-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 25px;
             margin-top: 20px;
         }
 
@@ -185,19 +185,55 @@
             background-color: #0d1117;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 25px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .price-card h3 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .price-card .subtitle {
+            font-size: 0.85rem;
             color: var(--text-muted);
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .price-card .amount {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 800;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+        }
+
+        .price-card .sub-amount {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .price-card ul {
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .btn-card {
+            display: block;
+            text-align: center;
+            background-color: var(--accent-green);
+            color: white;
+            font-weight: 700;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-card:hover {
+            background-color: var(--accent-green-hover);
         }
 
         .faq-item {
@@ -235,8 +271,8 @@
         </div>
 
         <div class="cta-box">
-            <div class="cta-price">$499 Setup + $149/month</div>
-            <a href="https://buy.stripe.com/00w3cwgbQddG4mo0FB3ZK00" class="btn-primary">START MY RRU RENTAL SETUP</a>
+            <div class="cta-price">$499 Setup + $149/month Standard Tier</div>
+            <a href="https://buy.stripe.com/00w3cwgbQddG4mo0FB3ZK00" class="btn-primary">START STANDARD DEPLOYMENT</a>
         </div>
     </header>
 
@@ -276,31 +312,41 @@
     </section>
 
     <section>
-        <h2>Start Your RRU Rental Deployment</h2>
+        <h2>Choose Your Deployment Tier</h2>
         <div class="pricing-grid">
             <div class="price-card">
-                <h3>One-Time Setup</h3>
-                <div class="amount">$499</div>
-                <ul>
-                    <li>RRU Rental Configuration</li>
-                    <li>Dedicated Workflow Setup</li>
-                    <li>Custom QR Code</li>
-                    <li>Deployment & Testing</li>
-                </ul>
+                <div>
+                    <h3>Standard Tier</h3>
+                    <div class="subtitle">For independent agents & single offices</div>
+                    <div class="amount">$499 setup</div>
+                    <div class="sub-amount">+ $149 / mo recurring</div>
+                    <ul>
+                        <li>RRU Rental Configuration</li>
+                        <li>Dedicated Workflow Setup</li>
+                        <li>Custom QR Code & Routing</li>
+                        <li>Up to 100 Submissions / mo</li>
+                        <li>Deployment & Testing</li>
+                    </ul>
+                </div>
+                <a href="https://buy.stripe.com/00w3cwgbQddG4mo0FB3ZK00" class="btn-card">SELECT STANDARD</a>
             </div>
-            <div class="price-card">
-                <h3>Managed Infrastructure</h3>
-                <div class="amount">$149<span style="font-size: 1rem; color: var(--text-muted);">/mo</span></div>
-                <ul>
-                    <li>Managed Hosting & Maintenance</li>
-                    <li>Email Delivery Infrastructure</li>
-                    <li>Up to 100 Submissions / mo</li>
-                    <li>Ongoing Technical Support</li>
-                </ul>
+
+            <div class="price-card" style="border-color: var(--accent-blue);">
+                <div>
+                    <h3>Professional Tier</h3>
+                    <div class="subtitle">For growing multi-agent brokerages</div>
+                    <div class="amount">$899 setup</div>
+                    <div class="sub-amount">+ $299 / mo recurring</div>
+                    <ul>
+                        <li>Advanced Multi-Agent Setup</li>
+                        <li>Priority Bilingual Routing</li>
+                        <li>Custom QR Code Deployment</li>
+                        <li>Up to 300 Submissions / mo</li>
+                        <li>Dedicated Support & Testing</li>
+                    </ul>
+                </div>
+                <a href="https://buy.stripe.com/9B614oe3I1uYbOQdsn3ZK01" class="btn-card" style="background-color: var(--accent-blue);">SELECT PROFESSIONAL</a>
             </div>
-        </div>
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="https://buy.stripe.com/00w3cwgbQddG4mo0FB3ZK00" class="btn-primary">START MY RRU RENTAL SETUP</a>
         </div>
     </section>
 

@@ -1,225 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RRU Rental — Saint Martin Revenue Group</title>
-<meta name="description" content="RRU Rental captures prospective renters 24/7, guides them through a bilingual English/Spanish intake, and delivers a structured Renter Intelligence Brief.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink:   '#0F1B2D',
-          paper: '#FAF8F3',
-          brass: '#C08A3E',
-          moss:  '#3F6D4E',
-          line:  '#DED8C9',
-        },
-        fontFamily: {
-          serif: ['"Fraunces"', 'serif'],
-          sans:  ['"Inter"', 'sans-serif'],
-          mono:  ['"IBM Plex Mono"', 'monospace'],
-        },
-      }
-    }
-  }
-</script>
-<style>
-  html { scroll-behavior: smooth; }
-  body { font-feature-settings: "kern" 1; }
-  .rule { border-color: #DED8C9; }
-  ::selection { background: #C08A3E; color: #FAF8F3; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRU™ Rental — Managed Rental Inquiry Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-paper text-ink font-sans antialiased">
+<body class="bg-slate-50 text-slate-800">
 
-  <!-- ============ NAV ============ -->
-  <header class="border-b border-line">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-      <div class="font-serif text-[17px] tracking-tight">Saint Martin Revenue Group <span class="text-ink/40 font-sans font-normal text-sm">/ Aten Technologies</span></div>
-      <a href="#pricing" class="hidden sm:inline-flex items-center rounded-sm border border-ink/15 px-4 py-2 text-sm font-medium hover:border-brass hover:text-brass transition-colors">Get started</a>
-    </div>
-  </header>
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-6">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-sm font-bold tracking-widest uppercase">
+                Saint Martin Revenue Group <span class="text-slate-400">|</span> Aten Technologies
+            </div>
+        </div>
+    </header>
 
-  <!-- ============ HERO ============ -->
-  <section class="border-b border-line bg-ink text-paper">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-2 gap-16 items-center">
-      <div>
-        <h1 class="font-serif leading-[1.05] text-[2.6rem] md:text-[3.4rem]">
-          Stop losing rental inquiries.<br>
-          <span class="text-brass">Start receiving rental intelligence.</span>
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">
+            STOP LOSING RENTAL INQUIRIES.<br>
+            <span class="text-blue-600">START RECEIVING RENTAL INTELLIGENCE.</span>
         </h1>
-        <p class="mt-7 text-[17px] leading-relaxed text-paper/75 max-w-md">
-          RRU Rental captures prospective renters 24/7, guides them through a bilingual English/Spanish intake, and transforms their responses into a structured Renter Intelligence Brief your team can act on.
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto mb-10">
+            RRU Rental captures prospective renters 24/7, guides them through a bilingual English/Spanish intake, and transforms their responses into a structured Renter Intelligence Brief your team can act on.
         </p>
-
-        <dl class="mt-10 grid grid-cols-2 gap-x-8 gap-y-5 max-w-md text-sm">
-          <div class="border-t border-paper/15 pt-3">
-            <dt class="text-paper/50">Coverage</dt>
-            <dd class="mt-1 font-medium">24/7 inquiry capture</dd>
-          </div>
-          <div class="border-t border-paper/15 pt-3">
-            <dt class="text-paper/50">Languages</dt>
-            <dd class="mt-1 font-medium">English + Spanish</dd>
-          </div>
-          <div class="border-t border-paper/15 pt-3">
-            <dt class="text-paper/50">Scoring</dt>
-            <dd class="mt-1 font-medium">0–100 readiness score</dd>
-          </div>
-          <div class="border-t border-paper/15 pt-3">
-            <dt class="text-paper/50">Output</dt>
-            <dd class="mt-1 font-medium">Structured renter intelligence</dd>
-          </div>
-        </dl>
-
-        <div class="mt-10 flex items-center gap-5">
-          <a href="https://buy.stripe.com/placeholder" class="inline-flex items-center justify-center rounded-sm bg-brass text-ink font-semibold px-6 py-3.5 hover:bg-brass/90 transition-colors">
-            Start my RRU Rental setup
-          </a>
-          <span class="text-paper/60 text-sm">$499 setup + $149/month</span>
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
+            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold text-sm">24/7 Inquiry Capture</span>
+            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold text-sm">English + Spanish</span>
+            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold text-sm">0-100 Readiness Score</span>
+            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold text-sm">Structured Renter Intelligence</span>
         </div>
-      </div>
 
-      <!-- brief mockup -->
-      <div class="relative">
-        <div class="absolute -inset-3 border border-brass/25 rounded-sm hidden md:block"></div>
-        <div class="relative bg-paper text-ink rounded-sm shadow-2xl shadow-black/40 p-6 md:p-7">
-          <div class="flex items-center justify-between border-b border-line pb-4">
-            <span class="font-mono text-[11px] tracking-wide text-ink/50">RRU™ RENTAL INQUIRY BRIEF</span>
-            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-moss">
-              <span class="w-1.5 h-1.5 rounded-full bg-moss"></span> Ready for agent review
-            </span>
-          </div>
-
-          <div class="mt-5 flex items-end gap-2">
-            <span class="font-serif text-5xl leading-none">95</span>
-            <span class="text-ink/40 pb-1">/ 100 readiness</span>
-          </div>
-
-          <div class="mt-6">
-            <p class="font-mono text-[11px] text-ink/50 mb-2">KEY FINDINGS</p>
-            <p class="text-sm leading-relaxed text-ink/80">
-              Prospect is actively searching for a studio apartment near 233rd Street in the 10466 ZIP code for a November 1, 2026 move-in. Financial context is complete, with a $2,000 budget supported by employment income and a Section 8 voucher.
-            </p>
-          </div>
-
-          <div class="mt-6 border-t border-line pt-5">
-            <p class="font-mono text-[11px] text-ink/50 mb-3">DOCUMENT READINESS</p>
-            <ul class="space-y-2 text-sm">
-              <li class="flex items-center gap-2"><span class="text-moss">✓</span> NYC ID reported</li>
-              <li class="flex items-center gap-2"><span class="text-moss">✓</span> Employment reported</li>
-              <li class="flex items-center gap-2"><span class="text-brass">⚠</span> Additional documentation to be reviewed</li>
-            </ul>
-          </div>
+        <div class="bg-white border-2 border-blue-600 rounded-xl p-8 inline-block shadow-lg">
+            <p class="text-2xl font-bold mb-4">$499 Setup + $149/month</p>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
+                START MY RRU RENTAL SETUP
+            </a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ PROBLEM ============ -->
-  <section class="border-b border-line">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-20 grid md:grid-cols-2 gap-14">
-      <div>
-        <h2 class="font-serif text-3xl md:text-[2.2rem] leading-tight">Your agents should not have to start every rental inquiry from zero.</h2>
-      </div>
-      <ul class="space-y-4 text-[17px] text-ink/75">
-        <li class="border-t border-line pt-4">Missed calls &amp; after-hours inquiries</li>
-        <li class="border-t border-line pt-4">Weekend inquiries piling up in your inbox</li>
-        <li class="border-t border-line pt-4">Repetitive preliminary questions</li>
-        <li class="border-t border-line pt-4">Scattered email and text information</li>
-        <li class="border-t border-line pt-4">Incomplete renter context wasting your team's time</li>
-      </ul>
-    </div>
-    <div class="max-w-6xl mx-auto px-6 md:px-10 pb-20">
-      <div class="bg-ink/[0.03] border border-line rounded-sm px-7 py-6 text-[17px] leading-relaxed max-w-3xl">
-        <span class="font-serif text-xl">The solution.</span>
-        <span class="text-ink/80"> RRU Rental moves the preliminary information-gathering process into an automated workflow so your team receives organized information before making the follow-up call.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FAIR HOUSING ============ -->
-  <section class="border-b border-line bg-ink text-paper">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-20 grid md:grid-cols-2 gap-14 items-start">
-      <div>
-        <h2 class="font-serif text-3xl leading-tight">Fair Housing–minded by design.</h2>
-        <p class="mt-4 text-brass font-medium">RRU evaluates the inquiry — not the person.</p>
-      </div>
-      <p class="text-[17px] leading-relaxed text-paper/75">
-        RRU Rental is designed to collect and organize rental inquiry information without making discriminatory leasing decisions or approving or denying applicants. The technology structures the information; your qualified human team makes the final decision.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ PRICING ============ -->
-  <section id="pricing" class="border-b border-line">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-20">
-      <h2 class="font-serif text-3xl md:text-[2.2rem]">Start your RRU Rental deployment</h2>
-
-      <div class="mt-12 grid md:grid-cols-2 gap-px bg-line border border-line rounded-sm overflow-hidden">
-        <div class="bg-paper p-8">
-          <p class="text-ink/50 text-sm">One-time setup</p>
-          <p class="font-serif text-4xl mt-2">$499</p>
-          <ul class="mt-7 space-y-3 text-sm text-ink/80">
-            <li class="flex gap-2"><span class="text-brass">—</span> RRU Rental configuration</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Dedicated workflow setup</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Custom QR code</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Deployment &amp; testing</li>
-          </ul>
+    <!-- Problem & Solution -->
+    <section class="bg-white py-16 border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Your agents should not have to start every rental inquiry from zero.</h2>
+                <ul class="space-y-3 text-slate-600 mb-6">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-red-500 mr-2 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        Missed calls & after-hours inquiries
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-red-500 mr-2 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        Weekend inquiries piling up in your inbox
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-red-500 mr-2 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        Repetitive preliminary questions & scattered information
+                    </li>
+                </ul>
+                <p class="font-semibold text-slate-800">The Solution:</p>
+                <p class="text-slate-600">RRU Rental moves the preliminary information-gathering process into an automated workflow so your team receives organized information before making the follow-up call.</p>
+            </div>
+            
+            <!-- Mockup Brief -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-4">
+                    <h3 class="font-bold text-slate-900">RRU™ RENTAL INTELLIGENCE BRIEF</h3>
+                    <p class="text-sm text-slate-500">READINESS SCORE: <span class="font-bold text-green-600">95 / 100</span></p>
+                    <p class="text-sm text-slate-500">STATUS: Ready for Agent Review</p>
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-slate-800 mb-1">KEY FINDINGS:</p>
+                    <p class="text-sm text-slate-600 mb-4">Prospect is actively searching for a studio apartment near 233rd Street in the 10466 ZIP code for a November 1, 2026 move-in. Financial context is complete, with a $2,000 budget supported by employment income and a Section 8 voucher.</p>
+                    
+                    <p class="text-sm font-bold text-slate-800 mb-1">DOCUMENT READINESS:</p>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>☑ NYC ID reported</li>
+                        <li>☑ Employment reported</li>
+                        <li>☑ Additional documentation to be reviewed</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="bg-paper p-8">
-          <p class="text-ink/50 text-sm">Managed infrastructure</p>
-          <p class="font-serif text-4xl mt-2">$149<span class="text-lg text-ink/50">/mo</span></p>
-          <ul class="mt-7 space-y-3 text-sm text-ink/80">
-            <li class="flex gap-2"><span class="text-brass">—</span> Managed hosting &amp; maintenance</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Email delivery infrastructure</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Up to 100 submissions / mo</li>
-            <li class="flex gap-2"><span class="text-brass">—</span> Ongoing technical support</li>
-          </ul>
-        </div>
-      </div>
+    </section>
 
-      <div class="mt-10">
-        <a href="https://buy.stripe.com/placeholder" class="inline-flex items-center justify-center rounded-sm bg-brass text-ink font-semibold px-7 py-4 hover:bg-brass/90 transition-colors">
-          Start my RRU Rental setup
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Pricing Breakdown -->
+    <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-12">Start Your RRU Rental Deployment</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <!-- Setup -->
+            <div class="bg-white border border-slate-200 rounded-xl p-8 shadow-sm">
+                <h3 class="text-xl font-bold mb-2">One-Time Setup</h3>
+                <p class="text-4xl font-extrabold text-blue-600 mb-6">$499</p>
+                <ul class="text-left space-y-3 text-slate-600">
+                    <li>✓ RRU Rental Configuration</li>
+                    <li>✓ Dedicated Workflow Setup</li>
+                    <li>✓ Custom QR Code</li>
+                    <li>✓ Deployment & Testing</li>
+                </ul>
+            </div>
+            <!-- Monthly -->
+            <div class="bg-slate-900 text-white rounded-xl p-8 shadow-sm">
+                <h3 class="text-xl font-bold mb-2">Managed Infrastructure</h3>
+                <p class="text-4xl font-extrabold text-blue-400 mb-6">$149<span class="text-lg text-slate-400 font-normal">/mo</span></p>
+                <ul class="text-left space-y-3 text-slate-300">
+                    <li>✓ Managed Hosting & Maintenance</li>
+                    <li>✓ Email Delivery Infrastructure</li>
+                    <li>✓ Up to 100 Submissions / mo</li>
+                    <li>✓ Ongoing Technical Support</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-12">
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
+                START MY RRU RENTAL SETUP
+            </a>
+        </div>
+    </section>
 
-  <!-- ============ FAQ ============ -->
-  <section class="border-b border-line">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-20">
-      <h2 class="font-serif text-3xl md:text-[2.2rem] mb-10">Frequently asked questions</h2>
-      <div class="divide-y divide-line border-t border-line max-w-3xl">
-        <div class="py-6">
-          <p class="font-medium text-[17px]">What is RRU Rental?</p>
-          <p class="mt-2 text-ink/70 leading-relaxed">A managed digital rental inquiry capture and qualification system that converts prospective renter inquiries into structured Renter Intelligence Briefs for human agent follow-up.</p>
+    <!-- Footer & Disclaimers -->
+    <footer class="bg-slate-100 border-t border-slate-200 py-12">
+        <div class="max-w-5xl mx-auto px-6 text-sm text-slate-500">
+            <div class="mb-8">
+                <h4 class="font-bold text-slate-700 mb-2">Fair Housing-Minded by Design</h4>
+                <p class="mb-2">RRU evaluates the inquiry - not the person. RRU Rental is designed to collect and organize rental inquiry information without making discriminatory leasing decisions or approving/denying applicants. The technology structures the information; your qualified human team makes the final decision.</p>
+                <p class="italic">Fair Housing Disclaimer: RRU Rental is designed as a standardized rental inquiry and information-organization utility and is not intended to make discriminatory leasing decisions. The customer remains responsible for applying lawful rental criteria consistently and for complying with all applicable federal, NYS, and NYC housing requirements.</p>
+            </div>
+            <p>&copy; 2026 Saint Martin Revenue Group / Aten Technologies. All rights reserved.</p>
         </div>
-        <div class="py-6">
-          <p class="font-medium text-[17px]">Does RRU Rental approve or deny renters?</p>
-          <p class="mt-2 text-ink/70 leading-relaxed">No. RRU Rental does not make final rental decisions or approve or deny applicants.</p>
-        </div>
-        <div class="py-6">
-          <p class="font-medium text-[17px]">How long does deployment take?</p>
-          <p class="mt-2 text-ink/70 leading-relaxed">Your system is targeted for deployment within 72 hours after receiving your required business and onboarding information.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="max-w-6xl mx-auto px-6 md:px-10 py-12">
-    <p class="text-xs text-ink/50 leading-relaxed max-w-2xl">
-      Fair Housing disclaimer: RRU Rental is designed as a standardized rental inquiry and information-organization utility and is not intended to make discriminatory leasing decisions. The customer remains responsible for applying lawful rental criteria consistently and for complying with all applicable federal, NYS, and NYC housing requirements.
-    </p>
-    <p class="mt-6 text-xs text-ink/40">© 2026 Saint Martin Revenue Group / Aten Technologies. All rights reserved.</p>
-  </footer>
+    </footer>
 
 </body>
 </html>

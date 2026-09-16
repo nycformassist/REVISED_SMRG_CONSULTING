@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRU™ Buyer & Seller — Opportunity Intelligence Infrastructure</title>
+    <title>RRU™ Buyer / Seller — Opportunity Intelligence Infrastructure</title>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -131,15 +131,43 @@
             text-align: center;
         }
 
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background-color: #0d1117;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 8px;
+        }
+
         ul {
             list-style: none;
             padding-left: 0;
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
         }
 
         li::before {
@@ -197,11 +225,6 @@
             margin-bottom: 20px;
         }
 
-        .price-card ul {
-            margin-bottom: 25px;
-            font-size: 0.9rem;
-        }
-
         .btn-card {
             display: block;
             text-align: center;
@@ -212,6 +235,7 @@
             border-radius: 6px;
             text-decoration: none;
             transition: background-color 0.2s;
+            margin-top: 20px;
         }
 
         .btn-card:hover {
@@ -260,7 +284,7 @@
     <header>
         <div class="brand">Saint Martin Revenue Group • Aten Technologies</div>
         <h1>TURN REAL ESTATE INQUIRIES<br>INTO OPPORTUNITY INTELLIGENCE.</h1>
-        <p class="subhead">A buyer or seller inquiry is not the same thing as a qualified opportunity[cite: 7]. RRU Buyer/Seller structures incoming residential real estate inquiries into decision-ready intelligence—giving agents and teams a clearer picture before the next conversation[cite: 7].</p>
+        <p class="subhead">A buyer or seller inquiry is not the same thing as a qualified opportunity. RRU Buyer/Seller transforms incoming residential real estate inquiries into decision-ready intelligence—giving agents and teams a clearer picture before the next sales conversation.</p>
         
         <div class="proof-bar">
             <div class="proof-pill">Buyer Readiness</div>
@@ -270,38 +294,53 @@
         </div>
 
         <div class="cta-box">
-            <div class="cta-price">$999 Setup + $249/month Core Deployment</div>
-            <a href="checkout.smrgconsulting.com" class="btn-primary">TURN MY INQUIRIES INTO INTELLIGENCE</a>
+            <div class="cta-price">Core Deployment: $999 Setup + $249/month</div>
+            <a href="#pricing" class="btn-primary">TURN MY INQUIRIES INTO INTELLIGENCE</a>
         </div>
     </header>
 
     <section>
         <h2>A lead is not the same as an opportunity.</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 20px;">Real estate organizations receive inquiries from multiple channels: website forms, email, phone, referrals, advertising, and social media[cite: 7]. The problem isn't always generating another lead—it's knowing what is actually inside the lead[cite: 7].</p>
-        <ul style="max-width: 700px; margin: 0 auto;">
-            <li>Who is buying or selling?</li>
-            <li>What are their specific property and geographic preferences?</li>
-            <li>Where are they in the financial and timeline process?</li>
-            <li>What critical context or information is missing?</li>
-        </ul>
-        <p style="margin-top: 20px; color: var(--text-muted); text-align: center;"><strong>The Operational Solution:</strong> RRU captures and organizes reported information so your sales team never has to begin a conversation from zero[cite: 7].</p>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 20px;">Real estate organizations receive inquiries from website forms, email, phone, referrals, advertising, and social media. The problem isn't always generating another lead—it's knowing what is actually inside the lead before your agents pick up the phone.</p>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Buyer Intelligence</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">RRU structures reported buyer information around key operational factors:</p>
+                <ul>
+                    <li>Property & geographic preferences</li>
+                    <li>Timeline & move-in expectations</li>
+                    <li>Budget & financing context</li>
+                    <li>Readiness, stated goals & missing info</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Seller Intelligence</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">RRU organizes reported seller information to streamline initial outreach:</p>
+                <ul>
+                    <li>Property characteristics & details</li>
+                    <li>Seller objectives & timeline</li>
+                    <li>Property context & stated expectations</li>
+                    <li>Readiness & follow-up considerations</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Seasonal Year-End Tax Conversion Section -->
     <div class="tax-box">
         <h3>Considering This Deployment as a Year-End Business Investment?</h3>
-        <p>If your real estate team is evaluating technology and operational improvements before year-end, ask your CPA how this purchase would be treated for your specific business entity and accounting method[cite: 7]. Qualifying business expenses may be deductible depending on the circumstances[cite: 7].</p>
-        <div class="disclaimer-note">Tax information is general information only and is not tax advice[cite: 7].</div>
+        <p>If your real estate team is evaluating technology and operational improvements before year-end, ask your CPA how this purchase would be treated for your specific business entity and accounting method. Qualifying business expenses may be deductible depending on the circumstances.</p>
+        <div class="disclaimer-note">Tax information is general information only and is not tax advice.</div>
     </div>
 
-    <section>
+    <section id="pricing">
         <h2>Choose Your Deployment Tier</h2>
         <div class="pricing-grid">
             <!-- Core Tier -->
             <div class="price-card">
                 <div>
                     <h3>Core Tier</h3>
-                    <div class="subtitle">For independent agents & small teams[cite: 7]</div>
+                    <div class="subtitle">For independent agents and small teams</div>
                     <div class="amount">$999 setup</div>
                     <div class="sub-amount">+ $249 / mo recurring</div>
                     <ul>
@@ -312,14 +351,14 @@
                         <li>Deployment & Testing</li>
                     </ul>
                 </div>
-                <a href="checkout.smrgconsulting.com" class="btn-card">SELECT CORE</a>
+                <a href="#" class="btn-card">SELECT CORE</a>
             </div>
 
             <!-- Professional Tier -->
             <div class="price-card" style="border-color: var(--accent-blue);">
                 <div>
                     <h3>Professional Tier</h3>
-                    <div class="subtitle">For established teams and brokerages[cite: 7]</div>
+                    <div class="subtitle">For established teams and brokerages</div>
                     <div class="amount">$2,500 setup</div>
                     <div class="sub-amount">+ $499 / mo recurring</div>
                     <ul>
@@ -329,14 +368,14 @@
                         <li>Dedicated Support & Testing</li>
                     </ul>
                 </div>
-                <a href="checkout.smrgconsulting.com" class="btn-card" style="background-color: var(--accent-blue);">SELECT PROFESSIONAL</a>
+                <a href="#" class="btn-card" style="background-color: var(--accent-blue);">SELECT PROFESSIONAL</a>
             </div>
 
             <!-- Enterprise Tier -->
             <div class="price-card" style="border-color: var(--accent-purple);">
                 <div>
                     <h3>Enterprise Tier</h3>
-                    <div class="subtitle">For high-volume & multi-agent operations[cite: 7]</div>
+                    <div class="subtitle">For high-volume or multi-agent operations</div>
                     <div class="amount">$5,000 setup</div>
                     <div class="sub-amount">+ $999 / mo recurring</div>
                     <ul>
@@ -346,7 +385,7 @@
                         <li>Dedicated Onboarding & Support</li>
                     </ul>
                 </div>
-                <a href="checkout.smrgconsulting.com" class="btn-card" style="background-color: var(--accent-purple);">SELECT ENTERPRISE</a>
+                <a href="#" class="btn-card" style="background-color: var(--accent-purple);">SELECT ENTERPRISE</a>
             </div>
         </div>
     </section>

@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
       "has": [
@@ -10,8 +10,11 @@
           "value": "checkout.smrgconsulting.com"
         }
       ],
-      "destination": "/checkout/index.html"
-    },
+      "destination": "https://checkout.smrgconsulting.com/checkout",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": "/api/$1"

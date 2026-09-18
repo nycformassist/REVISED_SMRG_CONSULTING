@@ -1,3 +1,4 @@
+import React from 'react';
 import SEO from '../components/SEO';
 
 export default function Home({ setPage }: { setPage: (page: string) => void }) {
@@ -39,162 +40,199 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
       <SEO 
         title="SMRG Consulting | Operational Intelligence & Intake Systems" 
-        description="We build and deploy practical AI-powered systems that plug operational gaps, organize incoming information, and move opportunities from first contact to informed human action."
+        description="SMRG builds specialized AI-powered capture and readiness systems that transform prospect-provided information into structured intelligence for professional review."
       />
       
       {/* SECTION 1 - HERO */}
       <section style={{ padding: '7rem 1rem', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
-            SMRG Consulting • Operational Intelligence
+            New York-Origin Intelligence • Licensable Infrastructure
           </div>
           <h1 style={{ fontSize: '3.75rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
-            Operational Intelligence for<br />Organizations Ready to Move.
+            Turn Prospect Inquiries Into<br />Structured Intelligence.
           </h1>
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '800px', margin: '0 auto 2.5rem auto' }}>
-            We build and deploy practical AI-powered systems that plug operational gaps, organize incoming information, and move opportunities from first contact to informed human action.
+            SMRG builds specialized AI-powered capture and readiness systems that transform prospect-provided information into structured intelligence for professional review.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={() => setPage('rru')} style={ctaPrimary}>Explore Our Solutions</button>
-            <button onClick={() => setPage('contact')} style={ctaSecondary}>Book an Operational Consultation</button>
+            <button onClick={() => setPage('contact')} style={ctaPrimary}>Book a Live Demonstration</button>
+            <button onClick={() => setPage('rru')} style={ctaSecondary}>Explore the Platform</button>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2 - THE OPERATIONAL PROBLEM */}
-      <section style={{ padding: '6rem 1rem', background: colors.surface }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '2rem' }}>Your organization may not have a technology problem. It may have a gap.</h2>
-          <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2rem' }}>
-            A missed inquiry. An unanswered email. A repetitive intake process. Information arriving in different formats. Staff spending time collecting information instead of acting on it. A valuable opportunity disappearing between first contact and human follow-up.
-          </p>
-          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: colors.primary }}>
-            These gaps create operational friction—and operational friction can become lost revenue, lost time, inconsistent service, and unnecessary workload.
-          </p>
-        </div>
-      </section>
-
-      {/* SECTION 3 - THE SMRG METHOD */}
-      <section style={{ padding: '5rem 1rem', background: colors.primary, color: '#fff' }}>
+      {/* SECTION 2 - RRU SECTION */}
+      <section style={{ padding: '6rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1rem' }}>Find the Gap. Plug the Gap. Move the Opportunity.</h2>
-          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '3rem' }}>
-            SMRG designs operational systems around the actual workflow—not around technology for technology's sake.
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ — Real Estate Readiness Utility</h2>
+          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: colors.primary, marginBottom: '1.5rem' }}>
+            Intelligent prospect capture for rental, buyer and seller workflows.
           </p>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.05em' }}>
-            <div>CAPTURE</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>STRUCTURE</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>READINESS</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>HUMAN ACTION</div>
-          </div>
-          <p style={{ marginTop: '3rem', fontSize: '1.15rem', color: '#D1D5DB', maxWidth: '800px', margin: '3rem auto 0' }}>
-            We don't sell AI. We build operational systems that happen to use AI. Technology is the mechanism; the operational outcome is the product.
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '850px', margin: '0 auto 3rem auto' }}>
+            RRU captures renters, buyers and sellers directly at the point of inquiry, structures the information they provide, and produces a workflow-specific Intelligence Brief for the appropriate real-estate professional.
           </p>
-        </div>
-      </section>
 
-      {/* SECTION 4 - FEATURED SOLUTION (RRU) */}
-      <section style={{ padding: '6rem 1rem', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-          <div>
-            <div style={{ fontWeight: 800, color: colors.accent, marginBottom: '0.5rem', letterSpacing:'0.05em' }}>PROPRIETARY UTILITY</div>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem' }}>RRU™ Real Estate Intelligence</h2>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>
-              Turn real estate inquiries into structured opportunity intelligence.
-            </h3>
-            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
-              Capture prospective renters, buyers, and sellers 24/7, structure the inquiry, and deliver decision-ready intelligence briefings before your agents pick up the phone.
-            </p>
-            <button onClick={() => setPage('rru')} style={ctaPrimary}>Explore RRU™ Solutions</button>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.background, padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
+            <div>Prospect</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div style={{ color: colors.accent }}>RRU Capture</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>AI Analysis & Structuring</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Intelligence Brief</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Human Professional</div>
           </div>
-          <div style={{ background: colors.surface, border: `1px solid ${colors.border}`, borderRadius:'8px', padding: '3rem', textAlign: 'center' }}>
-            <div style={{ fontWeight: 700, color: colors.secondary }}>Real Estate Readiness Utility</div>
-            <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: colors.secondary }}>
-              24/7 Bilingual Intake • 0–100 Readiness Score • Structured Opportunity Briefs
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* SECTION 5 - OTHER OPERATIONAL UTILITIES */}
-      <section style={{ padding: '6rem 1rem', background: colors.surface }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>Our Operational Utilities</h2>
-          <p style={{ textAlign: 'center', color: colors.secondary, marginBottom: '4rem', fontSize: '1.15rem' }}>
-            Proprietary systems built for specific operational challenges.
-          </p>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left' }}>
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>LIRU™</h3>
-              <div style={{ fontWeight: 600, color: colors.secondary, fontSize: '0.9rem', marginBottom:'1rem', textTransform: 'uppercase' }}>Legal Intake Readiness Utility</div>
-              <p style={{ color: colors.secondary, marginBottom: '2rem' }}>
-                Organize incoming client information, identify missing context, and create a structured starting point before it reaches the legal workflow.
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU Rental™</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Renter prospect capture + Rental Intelligence Brief
               </p>
-              <button onClick={() => setPage('liru')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', padding: 0, fontSize: '1rem' }}>Learn About LIRU →</button>
             </div>
-
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>IRU™</h3>
-              <div style={{ fontWeight: 600, color: colors.secondary, fontSize: '0.9rem', marginBottom:'1rem', textTransform: 'uppercase' }}>Immigration Readiness Utility</div>
-              <p style={{ color: colors.secondary, marginBottom: '2rem' }}>
-                Help nonprofit and community-serving organizations structure immigration-related intake and connect individuals with appropriate resources.
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>BUY</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ Buyer</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Buyer prospect capture + Buyer Intelligence Brief
               </p>
-              <button onClick={() => setPage('iru')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', padding: 0, fontSize: '1rem' }}>Learn About IRU →</button>
             </div>
-
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>Childcare OCC™</h3>
-              <div style={{ fontWeight: 600, color: colors.secondary, fontSize: '0.9rem', marginBottom:'1rem', textTransform: 'uppercase' }}>Operational Command Center</div>
-              <p style={{ color: colors.secondary, marginBottom: '2rem' }}>
-                Organize parent-provided information and translate it into structured operational guidance to ensure staff consistency across childcare centers.
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>SELL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ Seller</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Seller prospect capture + Seller Intelligence Brief
               </p>
-              <button onClick={() => setPage('childcare')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', padding: 0, fontSize: '1rem' }}>Explore OCC →</button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 6 & 8 - THE SMRG DIFFERENCE */}
+      {/* SECTION 3 - RRU PROFESSIONAL DUAL (COMMERCIAL 1) */}
+      <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ Professional Dual</h2>
+          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: '#F9FAFB', marginBottom: '1.5rem' }}>
+            RRU + RRU Rental for professional real-estate organizations.
+          </p>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '2.5rem' }}>
+            Deploy Buyer, Seller and Rental prospect-capture workflows through one professional real-estate intelligence system.
+          </p>
+          <div style={{ fontSize: '2.25rem', fontWeight: 900, color: '#34D399', marginBottom: '2.5rem' }}>
+            $2,500 Setup + $1,500 / month
+          </div>
+          <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: colors.accent, color: '#fff' }}>Book a Live Demonstration</button>
+        </div>
+      </section>
+
+      {/* SECTION 4 - PARTNER SUITE (COMMERCIAL 2) */}
+      <section style={{ padding: '6rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>SMRG™ Lead Intelligence Partner Suite</h2>
+          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: colors.primary, marginBottom: '1.5rem' }}>
+            One intelligence infrastructure for Legal + Rental + Real Estate.
+          </p>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '850px', margin: '0 auto 3rem auto' }}>
+            Designed for organizations that generate, manage, qualify, distribute or route professional-service prospects across multiple workflows.
+          </p>
+
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.background, padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
+            <div>Capture</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Understand</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Triage</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Structure</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div style={{ color: colors.accent }}>Score</div>
+            <div style={{ color: colors.accent }}>→</div>
+            <div>Connect</div>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '4rem' }}>
+            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>LEGAL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>LIRU™</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Legal prospect capture + structured legal-intake intelligence
+              </p>
+            </div>
+            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU Rental™</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Renter capture + Rental Intelligence Brief
+              </p>
+            </div>
+            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
+              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>REAL ESTATE</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™</h3>
+              <p style={{ color: colors.secondary, margin: 0 }}>
+                Buyer + Seller capture + Intelligence Briefs
+              </p>
+            </div>
+          </div>
+
+          <div style={{ fontSize: '2.25rem', fontWeight: 900, color: colors.primary, marginBottom: '1rem' }}>
+            $10,000 Implementation + $5,000 / month
+          </div>
+          <p style={{ fontSize: '1rem', color: colors.secondary, marginBottom: '2.5rem' }}>
+            Higher-volume API, white-label, reseller, multi-client and OEM deployments are separately licensed.
+          </p>
+          <button onClick={() => setPage('partner-suite')} style={ctaSecondary}>Discuss a Partner Deployment</button>
+        </div>
+      </section>
+
+      {/* SECTION 5 - SMRG POSITIONING & TRUST */}
       <section style={{ padding: '6rem 1rem', background: colors.background }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem' }}>
-          <div>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem' }}>High-end digital precision. Localized operational grit.</h2>
-            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '1.5rem' }}>
-              We combine modern AI and automation with real-world operational experience. The goal isn't an impressive technology demo—it's deploying systems that work inside real organizations.
-            </p>
-            <button onClick={() => setPage('about')} style={{ background: 'none', border: 'none', color: colors.primary, fontWeight: 700, cursor: 'pointer', padding: 0, borderBottom: `2px solid ${colors.primary}` }}>Read our philosophy</button>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: 900, marginBottom: '1.5rem' }}>
+            New York-origin intelligence. Specialized professional intake. Licensable infrastructure.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '700px', margin: '0 auto 4rem auto' }}>
+            SMRG develops specialized intake, readiness and intelligence systems for high-friction professional workflows.
+          </p>
+
+          <div style={{ background: colors.surface, padding: '3rem', borderRadius: '8px', border: `1px solid ${colors.border}`, textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Human Review & Professional Judgment</h3>
+              <p style={{ color: colors.secondary, margin: 0, fontSize: '1.05rem' }}>
+                SMRG systems organize and analyze information supplied by the prospect. They support professional review and do not replace the independent judgment of attorneys, real-estate professionals or other qualified professionals.
+              </p>
+            </div>
+            <div style={{ borderTop: `1px solid ${colors.border}`, paddingTop: '1.5rem' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Fair Housing & Application Processing</h3>
+              <p style={{ color: colors.secondary, margin: 0, fontSize: '1.05rem' }}>
+                RRU Rental does not approve or deny applicants. It captures and structures prospect information for human professional review.
+              </p>
+            </div>
           </div>
-          <div style={{ padding: '2.5rem', background: colors.primary, color: '#fff', borderRadius: '8px' }}>
-            <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem' }}>Need a custom operational workflow?</h2>
-            <p style={{ color: '#D1D5DB', marginBottom: '2rem' }}>
-              We design bespoke intelligence systems tailored precisely to your organization's unique operational bottlenecks and intake requirements.
+          
+          {/* Maintained separation of IRU */}
+          <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: `1px solid ${colors.border}` }}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem', color: colors.secondary }}>Also available for Community & Nonprofit:</h3>
+            <p style={{ color: colors.secondary, fontSize: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem' }}>
+              <strong>IRU™ (Immigration Readiness Utility)</strong> — <button onClick={() => setPage('iru')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', padding: 0 }}>View specific IRU solutions →</button>
             </p>
-            <button 
-              onClick={() => setPage('custom-systems')} 
-              style={{...ctaPrimary, background: '#fff', color: colors.primary, width: '100%'}}
-            >
-              Discuss Your Workflow
-            </button>
           </div>
         </div>
       </section>
 
-      {/* SECTION 10 - FINAL CTA */}
-      <section style={{ padding: '6rem 1rem', background: colors.surface, textAlign: 'center' }}>
+      {/* SECTION 6 - FINAL CTA */}
+      <section style={{ padding: '6rem 1rem', background: colors.surface, borderTop: `1px solid ${colors.border}`, textAlign: 'center' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1.5rem' }}>
-            Find the gap that is costing you time, opportunities, or revenue.
+            Ready to upgrade your intake workflow?
           </h2>
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem' }}>
-            Let's identify your workflow problem and determine whether an operational intelligence system can solve it.
+            Book a demonstration to see how our operational intelligence systems structure your incoming opportunities.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={() => setPage('contact')} style={ctaPrimary}>Book an Operational Consultation</button>
-            <button onClick={() => setPage('rru')} style={ctaSecondary}>Explore Our Solutions</button>
+            <button onClick={() => setPage('contact')} style={ctaPrimary}>Book a Live Demonstration</button>
           </div>
         </div>
       </section>

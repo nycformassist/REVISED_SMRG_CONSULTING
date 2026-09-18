@@ -86,21 +86,21 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left' }}>
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
+              <div style={{ fontWeight: 800, color: '#2563EB', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU Rental™</h3>
               <p style={{ color: colors.secondary, margin: 0 }}>
                 Renter prospect capture + Rental Intelligence Brief
               </p>
             </div>
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>BUY</div>
+              <div style={{ fontWeight: 800, color: '#2563EB', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>BUY</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ Buyer</h3>
               <p style={{ color: colors.secondary, margin: 0 }}>
                 Buyer prospect capture + Buyer Intelligence Brief
               </p>
             </div>
             <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>SELL</div>
+              <div style={{ fontWeight: 800, color: '#2563EB', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>SELL</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™ Seller</h3>
               <p style={{ color: colors.secondary, margin: 0 }}>
                 Seller prospect capture + Seller Intelligence Brief
@@ -154,21 +154,21 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '4rem' }}>
             <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
-              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>LEGAL</div>
+              <div style={{ fontWeight: 800, color: '#60A5FA', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>LEGAL</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>LIRU™</h3>
               <p style={{ color: '#94A3B8', margin: 0 }}>
                 Legal prospect capture + structured legal-intake intelligence
               </p>
             </div>
             <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
-              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
+              <div style={{ fontWeight: 800, color: '#60A5FA', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>RRU Rental™</h3>
               <p style={{ color: '#94A3B8', margin: 0 }}>
                 Renter capture + Rental Intelligence Brief
               </p>
             </div>
             <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
-              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>REAL ESTATE</div>
+              <div style={{ fontWeight: 800, color: '#60A5FA', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>REAL ESTATE</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>RRU™</h3>
               <p style={{ color: '#94A3B8', margin: 0 }}>
                 Buyer + Seller capture + Intelligence Briefs

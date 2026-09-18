@@ -1,4 +1,3 @@
-import React from 'react';
 import SEO from '../components/SEO';
 
 export default function Home({ setPage }: { setPage: (page: string) => void }) {
@@ -73,16 +72,16 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
             RRU captures renters, buyers and sellers directly at the point of inquiry, structures the information they provide, and produces a workflow-specific Intelligence Brief for the appropriate real-estate professional.
           </p>
 
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.background, padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
-            <div>Prospect</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div style={{ color: colors.accent }}>RRU Capture</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>AI Analysis & Structuring</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Intelligence Brief</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Human Professional</div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.primary, color: '#FFFFFF', padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
+            <div style={{ color: '#FFFFFF' }}>Prospect</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#60A5FA' }}>RRU Capture</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#FFFFFF' }}>AI Analysis & Structuring</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#34D399' }}>Intelligence Brief</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#FFFFFF' }}>Human Professional</div>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left' }}>
@@ -139,18 +138,18 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
             Designed for organizations that generate, manage, qualify, distribute or route professional-service prospects across multiple workflows.
           </p>
 
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.background, padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
-            <div>Capture</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Understand</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Triage</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Structure</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div style={{ color: colors.accent }}>Score</div>
-            <div style={{ color: colors.accent }}>→</div>
-            <div>Connect</div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.primary, color: '#FFFFFF', padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
+            <div style={{ color: '#FFFFFF' }}>Capture</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#FFFFFF' }}>Understand</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#FFFFFF' }}>Triage</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#FFFFFF' }}>Structure</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#60A5FA' }}>Score</div>
+            <div style={{ color: '#60A5FA' }}>→</div>
+            <div style={{ color: '#34D399' }}>Connect</div>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '4rem' }}>

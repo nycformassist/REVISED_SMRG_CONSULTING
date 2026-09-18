@@ -58,7 +58,7 @@ export default function About({ setPage }: { setPage?: (page: string) => void })
               As a lifelong New Yorker who navigated the city’s shelter system firsthand and spent over two decades optimizing operations and plugging profit leaks for business owners, one undeniable reality became clear: <strong>New Yorkers don’t experience systems as software. They experience them as people trying to get somewhere.</strong>
             </p>
             <div style={{ background: colors.background, borderLeft: `4px solid ${colors.accent}`, padding: '1.25rem 1.5rem', borderRadius: '0 8px 8px 0', marginTop: '1.5rem' }}>
-              <p style={{ fontSize: '1.1rem', color: colors.primary, fontWeight: 600, margin: 0, italic: 'italic' }}>
+              <p style={{ fontSize: '1.1rem', color: colors.primary, fontWeight: 600, margin: 0, fontStyle: 'italic' }}>
                 "The person has information. The professional needs structured intelligence. The bottleneck is getting from one to the other."
               </p>
             </div>
@@ -111,7 +111,7 @@ export default function About({ setPage }: { setPage?: (page: string) => void })
 
             <div style={{ background: '#1F2937', padding: '2rem', borderRadius: '8px', border: '1px solid #374151' }}>
               <div style={{ color: colors.accent, fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Real Estate & Housing</div>
-              <h3 style={{ fontSize: '1.5rem', fontWeight 800, color: '#fff', marginBottom: '0.5rem' }}>RRU™ & RRU Rental</h3>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#fff', marginBottom: '0.5rem' }}>RRU™ & RRU Rental</h3>
               <p style={{ fontSize: '0.95rem', color: '#9CA3AF', margin: 0 }}>
                 <strong>Real Estate Readiness Utility:</strong> Expanded into residential real estate—delivering 24/7 bilingual capture, voucher-mindful scoring, and decision-ready briefs for buyers, sellers, and renters.
               </p>

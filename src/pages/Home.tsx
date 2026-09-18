@@ -128,17 +128,17 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       </section>
 
       {/* SECTION 4 - PARTNER SUITE (COMMERCIAL 2) */}
-      <section style={{ padding: '6rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
+      <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff', borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>SMRG™ Lead Intelligence Partner Suite</h2>
-          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: colors.primary, marginBottom: '1.5rem' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>SMRG™ Lead Intelligence Partner Suite</h2>
+          <p style={{ fontSize: '1.25rem', fontWeight: 700, color: '#93C5FD', marginBottom: '1.5rem' }}>
             One intelligence infrastructure for Legal + Rental + Real Estate.
           </p>
-          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '850px', margin: '0 auto 3rem auto' }}>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '3rem', maxWidth: '850px', margin: '0 auto 3rem auto' }}>
             Designed for organizations that generate, manage, qualify, distribute or route professional-service prospects across multiple workflows.
           </p>
 
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: colors.primary, color: '#FFFFFF', padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.05em', background: '#1E293B', color: '#FFFFFF', padding: '1.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, marginBottom: '4rem' }}>
             <div style={{ color: '#FFFFFF' }}>Capture</div>
             <div style={{ color: '#60A5FA' }}>→</div>
             <div style={{ color: '#FFFFFF' }}>Understand</div>
@@ -153,36 +153,36 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '4rem' }}>
-            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>LEGAL</div>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>LIRU™</h3>
-              <p style={{ color: colors.secondary, margin: 0 }}>
+            <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
+              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>LEGAL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>LIRU™</h3>
+              <p style={{ color: '#94A3B8', margin: 0 }}>
                 Legal prospect capture + structured legal-intake intelligence
               </p>
             </div>
-            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU Rental™</h3>
-              <p style={{ color: colors.secondary, margin: 0 }}>
+            <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
+              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>RENTAL</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>RRU Rental™</h3>
+              <p style={{ color: '#94A3B8', margin: 0 }}>
                 Renter capture + Rental Intelligence Brief
               </p>
             </div>
-            <div style={{ padding: '2.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-              <div style={{ fontWeight: 800, color: colors.secondary, fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>REAL ESTATE</div>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>RRU™</h3>
-              <p style={{ color: colors.secondary, margin: 0 }}>
+            <div style={{ padding: '2.5rem', background: '#1E293B', borderRadius: '8px', border: '1px solid #334155' }}>
+              <div style={{ fontWeight: 800, color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>REAL ESTATE</div>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>RRU™</h3>
+              <p style={{ color: '#94A3B8', margin: 0 }}>
                 Buyer + Seller capture + Intelligence Briefs
               </p>
             </div>
           </div>
 
-          <div style={{ fontSize: '2.25rem', fontWeight: 900, color: colors.primary, marginBottom: '1rem' }}>
+          <div style={{ fontSize: '2.25rem', fontWeight: 900, color: '#34D399', marginBottom: '1rem' }}>
             $10,000 Implementation + $5,000 / month
           </div>
-          <p style={{ fontSize: '1rem', color: colors.secondary, marginBottom: '2.5rem' }}>
+          <p style={{ fontSize: '1rem', color: '#94A3B8', marginBottom: '2.5rem' }}>
             Higher-volume API, white-label, reseller, multi-client and OEM deployments are separately licensed.
           </p>
-          <button onClick={() => setPage('partner-suite')} style={ctaSecondary}>Discuss a Partner Deployment</button>
+          <button onClick={() => setPage('partner-suite')} style={{ ...ctaSecondary, color: '#fff', borderColor: '#fff' }}>Discuss a Partner Deployment</button>
         </div>
       </section>
 

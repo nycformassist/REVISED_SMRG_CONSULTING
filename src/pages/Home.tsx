@@ -147,7 +147,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
             <div style={{ color: '#60A5FA' }}>→</div>
             <div style={{ color: '#FFFFFF' }}>Structure</div>
             <div style={{ color: '#60A5FA' }}>→</div>
-            <div style={{ color: '#60A5FA' }}>Score</div>
+            <div style={{ color: '#34D399' }}>Classify</div>
             <div style={{ color: '#60A5FA' }}>→</div>
             <div style={{ color: '#34D399' }}>Connect</div>
           </div>
@@ -192,6 +192,9 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
           <h2 style={{ fontSize: '2rem', fontWeight: 900, marginBottom: '1.5rem' }}>
             New York-origin intelligence. Specialized professional intake. Licensable infrastructure.
           </h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '1rem', maxWidth: '700px', margin: '0 auto 1rem auto' }}>
+            Built from decades of frontline operational experience across healthcare, insurance, legal intake and service environments, SMRG applies that experience to modern AI-powered workflow systems.
+          </p>
           <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '700px', margin: '0 auto 4rem auto' }}>
             SMRG develops specialized intake, readiness and intelligence systems for high-friction professional workflows.
           </p>
@@ -204,7 +207,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
               </p>
             </div>
             <div style={{ borderTop: `1px solid ${colors.border}`, paddingTop: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Fair Housing & Application Processing</h3>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Fair Housing & Human Review</h3>
               <p style={{ color: colors.secondary, margin: 0, fontSize: '1.05rem' }}>
                 RRU Rental does not approve or deny applicants. It captures and structures prospect information for human professional review.
               </p>
@@ -228,7 +231,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
             Ready to upgrade your intake workflow?
           </h2>
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem' }}>
-            Book a demonstration to see how our operational intelligence systems structure your incoming opportunities.
+            SMRG builds specialized AI-powered systems that capture, structure and transform complex incoming information into professional-ready intelligence.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => setPage('contact')} style={ctaPrimary}>Book a Live Demonstration</button>

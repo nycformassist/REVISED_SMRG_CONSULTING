@@ -61,6 +61,42 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
+      {/* SECTION 1.5 - SMRG INTAKE WORKFLOW DIAGNOSTIC INTEGRATION */}
+      <section style={{ padding: '5rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ padding: '3rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+            <div style={{ fontWeight: 800, color: colors.accent, fontSize: '0.85rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              Operational Opportunity Analysis
+            </div>
+            <h3 style={{ fontSize: '1.75rem', fontWeight: 900, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
+              Identify the Operational Opportunity
+            </h3>
+            <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '1.5rem', lineHeight: '1.7' }}>
+              Where does valuable information get lost between first contact and human follow-up? SMRG examines how inquiries enter your business, what information is captured, what happens before staff respond, and where manual processes create friction. Our AI-powered capture and readiness systems are designed to turn unstructured prospect information into structured intelligence for professional review.
+            </p>
+            
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.03em', background: colors.primary, color: '#FFFFFF', padding: '1.25rem', borderRadius: '6px', marginBottom: '2rem' }}>
+              <div style={{ color: '#FFFFFF' }}>Capture</div>
+              <div style={{ color: '#60A5FA' }}>→</div>
+              <div style={{ color: '#FFFFFF' }}>Structure</div>
+              <div style={{ color: '#60A5FA' }}>→</div>
+              <div style={{ color: '#34D399' }}>Intelligence</div>
+              <div style={{ color: '#60A5FA' }}>→</div>
+              <div style={{ color: '#FFFFFF' }}>Human Review</div>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', borderTop: `1px solid ${colors.border}`, paddingTop: '1.5rem' }}>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: colors.secondary, maxWidth: '550px' }}>
+                <strong>Not sure where AI fits?</strong> We can identify the highest-value intake or workflow opportunity in your operation.
+              </p>
+              <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, padding: '0.75rem 1.5rem', fontSize: '0.9rem' }}>
+                Identify Your Intake Opportunity
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2 - RRU SECTION */}
       <section style={{ padding: '6rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>

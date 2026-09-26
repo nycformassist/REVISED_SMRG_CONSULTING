@@ -4,10 +4,10 @@ import SEO from '../components/SEO';
 export default function Contact({ setPage }: { setPage?: (page: string) => void }) {
   const [status, setStatus] = useState('');
   
-  // Enterprise styling variables
+  // Enterprise styling variables matching the site's dark theme/light content contrast
   const colors = {
     primary: '#111827',
-    secondary: '#374151',
+    secondary: '#4B5563',
     accent: '#2563EB',
     background: '#FFFFFF',
     surface: '#F9FAFB',
@@ -54,7 +54,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
   };
 
   return (
-    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6, background: colors.surface, minHeight: '80vh' }}>
+    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6, background: colors.background, minHeight: '80vh' }}>
       <SEO 
         title="Request a Demonstration | SMRG Consulting" 
         description="Schedule a live demonstration of SMRG Consulting's enterprise AI intake utilities and operational readiness systems."
@@ -65,7 +65,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
           
           {/* Left Column: Context & Trust */}
           <div>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em', color: colors.primary }}>
               Let's look at your workflow.
             </h1>
             <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '1.5rem' }}>
@@ -76,7 +76,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
             </p>
 
             {/* Diagnostic Supporting Microcopy Box */}
-            <div style={{ background: colors.background, padding: '2rem', borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
+            <div style={{ background: colors.surface, padding: '2rem', borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '0.5rem', color: colors.primary }}>
                 Identify Your Intake Opportunity
               </h3>
@@ -87,36 +87,36 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
           </div>
 
           {/* Right Column: Intake Form */}
-          <div style={{ background: colors.background, padding: '2.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Request a Demonstration</h2>
+          <div style={{ background: colors.surface, padding: '2.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem', color: colors.primary }}>Request a Demonstration</h2>
             <form onSubmit={handleSubmit}>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Full Name</label>
-                <input type="text" name="name" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Full Name</label>
+                <input type="text" name="name" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }} />
               </div>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Corporate Email</label>
-                <input type="email" name="email" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Corporate Email</label>
+                <input type="email" name="email" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }} />
               </div>
 
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Phone Number (Optional)</label>
-                <input type="tel" name="phone" placeholder="e.g. (555) 000-0000" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Phone Number (Optional)</label>
+                <input type="tel" name="phone" placeholder="e.g. (555) 000-0000" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }} />
               </div>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Company / Organization Name</label>
-                <input type="text" name="company" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Company / Organization Name</label>
+                <input type="text" name="company" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }} />
               </div>
 
-              <div style={{ padding: '1.5rem', background: colors.surface, borderRadius: '4px', border: `1px solid ${colors.border}`, margin: '1.5rem 0' }}>
-                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem' }}>Operational Context</h3>
+              <div style={{ padding: '1.5rem', background: colors.background, borderRadius: '4px', border: `1px solid ${colors.border}`, margin: '1.5rem 0' }}>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem', color: colors.primary }}>Operational Context</h3>
                 
                 <div style={{ marginBottom: '1rem' }}>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Solution of Interest</label>
-                  <select name="product_interest" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Solution of Interest</label>
+                  <select name="product_interest" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }}>
                     <option value="" disabled>Select a utility...</option>
                     <option value="RRU">RRU™ (Real Estate Readiness)</option>
                     <option value="LIRU">LIRU™ (Legal Intake)</option>
@@ -127,13 +127,13 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                 </div>
 
                 <div style={{ marginBottom: '1rem' }}>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>What is your primary intake friction?</label>
-                  <input type="text" name="friction" required placeholder="e.g., Incomplete forms, manual data entry..." style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box' }} />
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>What is your primary intake friction?</label>
+                  <input type="text" name="friction" required placeholder="e.g., Incomplete forms, manual data entry..." style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }} />
                 </div>
                 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem' }}>Team Size</label>
-                  <select name="team_size" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff' }}>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Team Size</label>
+                  <select name="team_size" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#fff', color: colors.primary }}>
                     <option value="" disabled>Select...</option>
                     <option value="1-10">1-10 Employees</option>
                     <option value="11-50">11-50 Employees</option>
@@ -145,8 +145,6 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
               <button 
                 type="submit" 
                 style={{ width: '100%', background: colors.primary, color: '#fff', padding: '1rem', borderRadius: '4px', border: 'none', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', transition: 'background 0.2s' }}
-                onMouseOver={(e) => e.currentTarget.style.background = colors.secondary}
-                onMouseOut={(e) => e.currentTarget.style.background = colors.primary}
               >
                 REQUEST DEMONSTRATION
               </button>

@@ -61,19 +61,29 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
       />
       
       <section style={{ padding: '6rem 1rem' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'start' }}>
           
           {/* Left Column: Context & Trust */}
           <div>
             <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
               Let's look at your workflow.
             </h1>
-            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
+            <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '1.5rem' }}>
               Your organization already has an intake process. The question is whether that process is working for you. 
             </p>
             <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '2rem' }}>
               Request a live demonstration, and we will show you how an SMRG operational utility can transform your unstructured inquiries into decision-ready intelligence.
             </p>
+
+            {/* Diagnostic Supporting Microcopy Box */}
+            <div style={{ background: colors.background, padding: '2rem', borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '0.5rem', color: colors.primary }}>
+                Identify Your Intake Opportunity
+              </h3>
+              <p style={{ fontSize: '1rem', color: colors.secondary, margin: 0, lineHeight: '1.6' }}>
+                <strong>Not sure where AI fits?</strong> We can identify the highest-value intake or workflow opportunity in your operation during our review.
+              </p>
+            </div>
           </div>
 
           {/* Right Column: Intake Form */}

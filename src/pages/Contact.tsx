@@ -4,14 +4,15 @@ import SEO from '../components/SEO';
 export default function Contact({ setPage }: { setPage?: (page: string) => void }) {
   const [status, setStatus] = useState('');
   
-  // Enterprise styling variables matching the site's dark theme/light content contrast
+  // Enterprise styling variables matching the site's dark theme contrast
   const colors = {
     primary: '#111827',
-    secondary: '#4B5563',
+    secondary: '#9CA3AF',
+    textLight: '#FFFFFF',
     accent: '#2563EB',
-    background: '#FFFFFF',
-    surface: '#F9FAFB',
-    border: '#E5E7EB',
+    background: '#0B0F19',
+    surface: '#1E293B',
+    border: '#334155',
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -54,7 +55,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
   };
 
   return (
-    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6, background: colors.background, minHeight: '80vh' }}>
+    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.textLight, lineHeight: 1.6, background: colors.background, minHeight: '80vh' }}>
       <SEO 
         title="Request a Demonstration | SMRG Consulting" 
         description="Schedule a live demonstration of SMRG Consulting's enterprise AI intake utilities and operational readiness systems."
@@ -65,7 +66,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
           
           {/* Left Column: Context & Trust */}
           <div>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em', color: colors.primary }}>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em', color: colors.textLight }}>
               Let's look at your workflow.
             </h1>
             <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '1.5rem' }}>
@@ -77,45 +78,45 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
 
             {/* Diagnostic Supporting Microcopy Box */}
             <div style={{ background: colors.surface, padding: '2rem', borderRadius: '8px', border: `1px solid ${colors.border}`, borderLeft: `4px solid ${colors.accent}` }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '0.5rem', color: colors.primary }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '0.5rem', color: colors.textLight }}>
                 Identify Your Intake Opportunity
               </h3>
               <p style={{ fontSize: '1rem', color: colors.secondary, margin: 0, lineHeight: '1.6' }}>
-                <strong>Not sure where AI fits?</strong> We can identify the highest-value intake or workflow opportunity in your operation during our review.
+                <strong style={{ color: colors.textLight }}>Not sure where AI fits?</strong> We can identify the highest-value intake or workflow opportunity in your operation during our review.
               </p>
             </div>
           </div>
 
           {/* Right Column: Intake Form */}
           <div style={{ background: colors.surface, padding: '2.5rem', borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem', color: colors.primary }}>Request a Demonstration</h2>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem', color: colors.textLight }}>Request a Demonstration</h2>
             <form onSubmit={handleSubmit}>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Full Name</label>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Full Name</label>
                 <input type="text" name="name" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }} />
               </div>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Corporate Email</label>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Corporate Email</label>
                 <input type="email" name="email" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }} />
               </div>
 
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Phone Number (Optional)</label>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Phone Number (Optional)</label>
                 <input type="tel" name="phone" placeholder="e.g. (555) 000-0000" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }} />
               </div>
               
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Company / Organization Name</label>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Company / Organization Name</label>
                 <input type="text" name="company" required style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }} />
               </div>
 
               <div style={{ padding: '1.5rem', background: colors.background, borderRadius: '4px', border: `1px solid ${colors.border}`, margin: '1.5rem 0' }}>
-                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem', color: colors.primary }}>Operational Context</h3>
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem', color: colors.textLight }}>Operational Context</h3>
                 
                 <div style={{ marginBottom: '1rem' }}>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Solution of Interest</label>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Solution of Interest</label>
                   <select name="product_interest" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }}>
                     <option value="" disabled>Select a utility...</option>
                     <option value="RRU">RRU™ (Real Estate Readiness)</option>
@@ -127,12 +128,12 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                 </div>
 
                 <div style={{ marginBottom: '1rem' }}>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>What is your primary intake friction?</label>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>What is your primary intake friction?</label>
                   <input type="text" name="friction" required placeholder="e.g., Incomplete forms, manual data entry..." style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }} />
                 </div>
                 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.primary }}>Team Size</label>
+                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Team Size</label>
                   <select name="team_size" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }}>
                     <option value="" disabled>Select...</option>
                     <option value="1-10">1-10 Employees</option>
@@ -144,13 +145,13 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
 
               <button 
                 type="submit" 
-                style={{ width: '100%', background: colors.primary, color: '#fff', padding: '1rem', borderRadius: '4px', border: 'none', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', transition: 'background 0.2s' }}
+                style={{ width: '100%', background: colors.accent, color: '#fff', padding: '1rem', borderRadius: '4px', border: 'none', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', transition: 'background 0.2s' }}
               >
                 REQUEST DEMONSTRATION
               </button>
               
               {status && (
-                <div style={{ marginTop: '1rem', padding: '1rem', background: '#EFF6FF', color: colors.accent, borderRadius: '4px', border: '1px solid #BFDBFE', fontWeight: 600, fontSize: '0.9rem', textAlign: 'center' }}>
+                <div style={{ marginTop: '1rem', padding: '1rem', background: '#0F172A', color: '#60A5FA', borderRadius: '4px', border: '1px solid #334155', fontWeight: 600, fontSize: '0.9rem', textAlign: 'center' }}>
                   {status}
                 </div>
               )}

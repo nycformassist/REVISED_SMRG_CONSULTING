@@ -39,7 +39,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
       <SEO 
         title="SMRG Consulting | Operational Intelligence & Intake Systems" 
-        description="SMRG builds specialized AI-powered capture and readiness systems that transform prospect-provided information into structured intelligence for professional review."
+        description="SMRG builds specialized AI-powered capture and readiness systems from firsthand operational experience—turning messy inbound information into structured intelligence for professional review."
       />
       
       {/* SECTION 1 - HERO */}
@@ -52,7 +52,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
             Turn Prospect Inquiries Into<br />Structured Intelligence.
           </h1>
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '800px', margin: '0 auto 2.5rem auto' }}>
-            SMRG builds specialized AI-powered capture and readiness systems that transform prospect-provided information into structured intelligence for professional review.
+            SMRG builds specialized AI-powered capture and readiness systems from firsthand operational experience—turning messy inbound information into structured intelligence for professional review.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => setPage('contact')} style={ctaPrimary}>Book a Live Demonstration</button>
@@ -61,21 +61,24 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
-      {/* SECTION 1.5 - SMRG INTAKE WORKFLOW DIAGNOSTIC INTEGRATION */}
+      {/* SECTION 1.5 — BUILT FROM THE PROBLEM (PROVENANCE) */}
       <section style={{ padding: '5rem 1rem', background: colors.surface, borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ padding: '3rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
             <div style={{ fontWeight: 800, color: colors.accent, fontSize: '0.85rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Operational Opportunity Analysis
+              Operational Provenance
             </div>
             <h3 style={{ fontSize: '1.75rem', fontWeight: 900, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
-              Identify the Operational Opportunity
+              Built From Firsthand Operational Experience
             </h3>
             <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '1.5rem', lineHeight: '1.7' }}>
-              Where does valuable information get lost between first contact and human follow-up? SMRG examines how inquiries enter your business, what information is captured, what happens before staff respond, and where manual processes create friction. Our AI-powered capture and readiness systems are designed to turn unstructured prospect information into structured intelligence for professional review.
+              SMRG's systems did not begin as abstract AI experiments. They emerged from more than two decades of frontline operational experience across high-volume environments—witnessing firsthand how much time, money, and professional attention are lost when inbound inquiries arrive incomplete, inconsistent, duplicated, or poorly structured.
+            </p>
+            <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '2rem', lineHeight: '1.7' }}>
+              The response was not another generic lead generator. It was to build deployable intelligence infrastructure that bridges the gap between raw human inquiry and professional action.
             </p>
             
-            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.03em', background: colors.primary, color: '#FFFFFF', padding: '1.25rem', borderRadius: '6px', marginBottom: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.03em', background: colors.primary, color: '#FFFFFF', padding: '1.25rem', borderRadius: '6px', marginBottom: '1.5rem' }}>
               <div style={{ color: '#FFFFFF' }}>Capture</div>
               <div style={{ color: '#60A5FA' }}>→</div>
               <div style={{ color: '#FFFFFF' }}>Structure</div>

@@ -225,6 +225,83 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
+      {/* SECTION 4B - PIRU COMMERCIAL (DIRECT PURCHASE) */}
+      <section style={{ padding: '6rem 1rem', background: colors.surface }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
+            Now Available — Direct Purchase
+          </div>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>PIRU™ — Prospect Intelligence Readiness Utility</h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
+            Turn a prospect list into actionable business intelligence before sales time is spent. Researched, verified prospects with decision-maker intelligence and why-now signals — not a contact list.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem', textAlign: 'left' }}>
+            <div style={{ padding: '1.75rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>Prospect Intelligence Snapshot</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: colors.accent }}>$495</div>
+              <div style={{ fontSize: '0.85rem', color: colors.secondary, marginBottom: '1rem', fontWeight: 600 }}>one-time</div>
+              <a href="https://buy.stripe.com/eVqbJ28Job5yf12bkf3ZK09" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Buy Now</a>
+            </div>
+            <div style={{ padding: '1.75rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>PIRU 10-Pack</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: colors.accent }}>$750</div>
+              <div style={{ fontSize: '0.85rem', color: colors.secondary, marginBottom: '1rem', fontWeight: 600 }}>one-time · 10 researched prospects</div>
+              <a href="https://buy.stripe.com/5kQ5kE5xc0qUaKMbkf3ZK0a" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Buy Now</a>
+            </div>
+            <div style={{ padding: '1.75rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>PIRU 25-Pack</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: colors.accent }}>$1,500</div>
+              <div style={{ fontSize: '0.85rem', color: colors.secondary, marginBottom: '1rem', fontWeight: 600 }}>one-time · 25 researched prospects</div>
+              <a href="https://buy.stripe.com/5kQ5kE3p47Tm0689c73ZK0b" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Buy Now</a>
+            </div>
+            <div style={{ padding: '1.75rem', background: colors.background, borderRadius: '8px', border: `2px solid ${colors.primary}`, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>PIRU Intelligence Program</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: colors.accent }}>$1,500</div>
+              <div style={{ fontSize: '0.85rem', color: colors.secondary, marginBottom: '1rem', fontWeight: 600 }}>per month · recurring pipeline</div>
+              <a href="https://buy.stripe.com/4gMbJ23p42z27yAdsn3ZK0c" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Get Started</a>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button onClick={() => setPage('piru')} style={ctaSecondary}>Full PIRU™ Details</button>
+            <button onClick={() => setPage('piru-advance')} style={ctaSecondary}>PIRU Advance™ Market Intelligence</button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4C - INSPECTOR AI COMMERCIAL (DIRECT PURCHASE) */}
+      <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontWeight: 800, color: '#93C5FD', letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
+            Now Available — Direct Purchase
+          </div>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>Inspector AI™ — Childcare Operational Intelligence</h2>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
+            AI-assisted review of your operational records: cross-referenced findings, potential gaps identified, regulatory citations, and ordered remediation priorities. Know what your records say before an inspection does.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem', textAlign: 'left' }}>
+            <div style={{ padding: '1.75rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>Single Review</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#34D399' }}>$299</div>
+              <div style={{ fontSize: '0.85rem', color: '#9CA3AF', marginBottom: '1rem', fontWeight: 600 }}>one-time</div>
+              <a href="https://buy.stripe.com/eVq4gAbVA7Tm5qs0FB3ZK0f" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Buy Now</a>
+            </div>
+            <div style={{ padding: '1.75rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>Professional</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#34D399' }}>$749</div>
+              <div style={{ fontSize: '0.85rem', color: '#9CA3AF', marginBottom: '1rem', fontWeight: 600 }}>per month · up to 5 reviews/month</div>
+              <a href="https://buy.stripe.com/4gM14o8Jo5Le2eg73Z3ZK0g" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Get Started</a>
+            </div>
+            <div style={{ padding: '1.75rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontWeight: 800, marginBottom: '0.25rem' }}>Center</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#34D399' }}>$1,499</div>
+              <div style={{ fontSize: '0.85rem', color: '#9CA3AF', marginBottom: '1rem', fontWeight: 600 }}>per month · up to 15 reviews/month</div>
+              <a href="https://buy.stripe.com/5kQfZi8Jo8Xq1acdsn3ZK0h" target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent, textAlign: 'center', marginTop: 'auto', textDecoration: 'none' }}>Get Started</a>
+            </div>
+          </div>
+          <button onClick={() => setPage('inspector-ai')} style={{ ...ctaSecondary, color: '#fff', borderColor: '#fff' }}>Full Inspector AI™ Details</button>
+        </div>
+      </section>
+
       {/* SECTION 5 - SMRG POSITIONING & TRUST */}
       <section style={{ padding: '6rem 1rem', background: colors.background }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>

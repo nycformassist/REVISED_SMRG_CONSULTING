@@ -6,9 +6,9 @@ export default function Footer({ setPage }: { setPage: (page: string) => void })
           Helping organizations uncover operational gaps, structure information, and move opportunities toward informed human action.
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-          <a href="/privacy.html" style={{ color: '#9CA3AF', textDecoration: 'none' }}>Privacy Notice</a>
+          <a href="/privacy" style={{ color: '#9CA3AF', textDecoration: 'none' }}>Privacy Notice</a>
           <span style={{ color: '#4B5563' }}>•</span>
-          <a href="/terms.html" style={{ color: '#9CA3AF', textDecoration: 'none' }}>Terms of Service</a>
+          <a href="/terms" style={{ color: '#9CA3AF', textDecoration: 'none' }}>Terms of Service</a>
         </div>
         <p>&copy; 2026 SMRG Consulting / Aten Technologies. All rights reserved.</p>
       </div>

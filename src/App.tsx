@@ -10,6 +10,10 @@ import Liru from './pages/Liru';
 import Iru from './pages/Iru';
 import Childcare from './pages/Childcare';
 import CustomSystems from './pages/CustomSystems';
+// Prospect & Operational Intelligence
+import Piru from './pages/Piru';
+import PiruAdvance from './pages/PiruAdvance';
+import InspectorAi from './pages/InspectorAi';
 // Strategic Pages
 import Industries from './pages/Industries';
 import HowItWorks from './pages/HowItWorks';
@@ -32,6 +36,11 @@ export default function App() {
       case 'iru': return <Iru setPage={setCurrentPage} />;
       case 'childcare': return <Childcare setPage={setCurrentPage} />;
       case 'custom-systems': return <CustomSystems setPage={setCurrentPage} />;
+      
+      // Prospect & Operational Intelligence
+      case 'piru': return <Piru setPage={setCurrentPage} />;
+      case 'piru-advance': return <PiruAdvance setPage={setCurrentPage} />;
+      case 'inspector-ai': return <InspectorAi setPage={setCurrentPage} />;
       
       // Market Categories
       case 'industries': return <Industries setPage={setCurrentPage} />;

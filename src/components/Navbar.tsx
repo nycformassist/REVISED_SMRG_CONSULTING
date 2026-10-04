@@ -90,6 +90,30 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                     IRU™ (Immigration Intake)
                   </button>
                   <button 
+                    onClick={() => { setPage('piru'); setSolutionsOpen(false); }} 
+                    style={dropdownItemStyle}
+                    onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
+                  >
+                    PIRU™ (Prospect Intelligence)
+                  </button>
+                  <button 
+                    onClick={() => { setPage('piru-advance'); setSolutionsOpen(false); }} 
+                    style={dropdownItemStyle}
+                    onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
+                  >
+                    PIRU Advance™ (Market Intelligence)
+                  </button>
+                  <button 
+                    onClick={() => { setPage('inspector-ai'); setSolutionsOpen(false); }} 
+                    style={dropdownItemStyle}
+                    onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
+                  >
+                    Inspector AI™ (Childcare Intelligence)
+                  </button>
+                  <button 
                     onClick={() => { setPage('childcare'); setSolutionsOpen(false); }} 
                     style={dropdownItemStyle}
                     onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}

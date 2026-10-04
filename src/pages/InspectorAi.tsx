@@ -77,35 +77,68 @@ export default function InspectorAi({ setPage }: { setPage: (page: string) => vo
             Inspector AI™ analyzes your submitted operational records, cross-references information across documents, identifies potential inconsistencies and gaps, connects findings to applicable regulatory requirements, and produces evidence-based findings with ordered remediation priorities.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="#pricing" style={ctaPrimary}>See Pricing</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>Talk to SMRG</button>
+            <button onClick={() => setPage('contact')} style={ctaPrimary}>Request a Demonstration</button>
+            <a href="#pricing" style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>See Pricing</a>
           </div>
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* INTELLIGENCE BEYOND STORAGE */}
+      <section style={{ padding: '5rem 1rem', background: colors.surface }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', textAlign: 'center' }}>
+            Storage was never the problem. Understanding is.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
+            Organizations increasingly have systems that store documents, records, forms, and operational information. The problem is often not storage — it is understanding what the information means when examined together.
+          </p>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginBottom: '0', maxWidth: '800px', margin: '0 auto' }}>
+            A training log, a drill record, a staffing roster, and a policy document each look fine on their own. Examined together, they can reveal gaps, inconsistencies, and risks no single document shows. Inspector AI™ is built for that intelligence gap.
+          </p>
+        </div>
+      </section>
+
+      {/* WHAT INSPECTOR AI DOES */}
       <section style={{ padding: '5rem 1rem', background: colors.surface }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
-            A second set of eyes on your documentation.
+            What Inspector AI does.
           </h2>
           <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginBottom: '4rem', maxWidth: '800px', margin: '0 auto 4rem' }}>
-            Childcare programs produce enormous documentation — attendance, staffing, training, drills, policies. Inspector AI™ reads across it all and surfaces what deserves a human's attention.
+            An intelligence and inspection capability: it examines operational information, cross-references it, identifies relevant conditions and signals, and surfaces findings people can act on.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
             {[
-              { t: 'Submit Operational Records', d: 'Upload your existing operational records — rosters, training logs, drill records, policies, attendance documentation.' },
-              { t: 'Cross-Referenced Analysis', d: 'The system cross-references information across documents, checking for inconsistencies, gaps, and missing required elements.' },
-              { t: 'Regulatory Citations', d: 'Findings connect to applicable regulatory requirements — 18 NYCRR Part 418-1 and NYC Health Code Article 47 — so you see the basis.' },
-              { t: 'Remediation Priorities', d: 'An ordered remediation report ranks what to address first, with the evidence behind every finding.' },
+              { t: 'UNDERSTAND', d: 'Interprets submitted operational records — rosters, training logs, drill records, policies, attendance documentation.' },
+              { t: 'CROSS-REFERENCE', d: 'Compares information across documents, checking for inconsistencies, gaps, and missing required elements.' },
+              { t: 'IDENTIFY', d: 'Finds discrepancies, conditions, risks, and signals — each connected to the applicable regulatory requirement.' },
+              { t: 'SURFACE', d: 'Presents evidence-based findings with ordered remediation priorities, in a form your team can act on.' },
             ].map((c, i) => (
               <div key={c.t} style={{ padding: '2rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
-                <div style={{ fontSize: '0.85rem', fontWeight: 800, color: colors.accent, marginBottom: '0.5rem' }}>STEP {i + 1}</div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>{c.t}</h3>
+                <div style={{ fontSize: '0.85rem', fontWeight: 800, color: colors.accent, marginBottom: '0.5rem' }}>0{i + 1}</div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>{c.t}</h3>
                 <p style={{ color: colors.secondary, margin: 0 }}>{c.d}</p>
               </div>
             ))}
           </div>
+          <p style={{ fontSize: '1rem', color: colors.secondary, textAlign: 'center', marginTop: '3rem', marginBottom: 0, maxWidth: '700px', margin: '3rem auto 0' }}>
+            It does not make autonomous decisions. It surfaces what deserves a human professional's attention — supporting judgment, not replacing it.
+          </p>
+        </div>
+      </section>
+
+      {/* BUILT FOR REAL-WORLD OPERATIONAL INFORMATION */}
+      <section style={{ padding: '5rem 1rem', background: colors.primary, color: '#fff' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>
+            Built for the information organizations already have.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
+            SMRG's thesis is simple: organizations don't need more places to store information. They need software that helps them understand the information they already have.
+          </p>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '0', maxWidth: '800px', margin: '0 auto' }}>
+            Inspector AI™ is that thesis in product form — operational information in, actionable intelligence out.
+          </p>
         </div>
       </section>
 
@@ -128,7 +161,7 @@ export default function InspectorAi({ setPage }: { setPage: (page: string) => vo
             ))}
           </div>
           <p style={{ textAlign: 'center', color: colors.secondary, marginTop: '2.5rem' }}>
-            Enterprise and multi-location organizations: <button onClick={() => setPage('contact')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', fontSize: '1rem', textDecoration: 'underline' }}>Request a Consultation</button>
+            Enterprise and multi-location organizations: <button onClick={() => setPage('contact')} style={{ background: 'none', border: 'none', color: colors.accent, fontWeight: 700, cursor: 'pointer', fontSize: '1rem', textDecoration: 'underline' }}>Request a Demonstration</button>
           </p>
         </div>
       </section>
@@ -149,13 +182,13 @@ export default function InspectorAi({ setPage }: { setPage: (page: string) => vo
       {/* FINAL CTA */}
       <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff', textAlign: 'center' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Get a clear picture of your documentation health.</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>See what Inspector AI can find.</h2>
           <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '2.5rem' }}>
-            A single review costs less than one hour of remediation scrambling.
+            Request a demonstration on your own records — or start with a single review today.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={LINKS.single} target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent }}>Buy a Single Review — $299</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Request a Consultation</button>
+            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: colors.accent }}>Request a Demonstration</button>
+            <a href={LINKS.single} target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Buy a Single Review — $299</a>
           </div>
         </div>
       </section>

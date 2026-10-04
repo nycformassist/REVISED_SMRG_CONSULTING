@@ -231,7 +231,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
           <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
             Now Available — Direct Purchase
           </div>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>PIRU™ — Prospect Intelligence Readiness Utility</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem' }}>PIRU™ — Prospect Intelligence & Revenue Readiness</h2>
           <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
             Turn a prospect list into actionable business intelligence before sales time is spent. Researched, verified prospects with decision-maker intelligence and why-now signals — not a contact list.
           </p>
@@ -274,7 +274,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
           <div style={{ fontWeight: 800, color: '#93C5FD', letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
             Now Available — Direct Purchase
           </div>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>Inspector AI™ — Childcare Operational Intelligence</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1rem', color: '#fff' }}>Inspector AI™ — Operational Information Intelligence</h2>
           <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
             AI-assisted review of your operational records: cross-referenced findings, potential gaps identified, regulatory citations, and ordered remediation priorities. Know what your records say before an inspection does.
           </p>

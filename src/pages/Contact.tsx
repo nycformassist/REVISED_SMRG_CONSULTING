@@ -127,6 +127,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                     <option value="Inspector-AI">Inspector AI™ (Childcare Intelligence)</option>
                     <option value="Childcare">Childcare OCC™</option>
                     <option value="Custom">Custom Operational System</option>
+                    <option value="Other">Other / Not Sure</option>
                   </select>
                 </div>
 

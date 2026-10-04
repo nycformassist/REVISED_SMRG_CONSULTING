@@ -69,7 +69,7 @@ export default function PiruAdvance({ setPage }: { setPage: (page: string) => vo
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#pricing" style={ctaPrimary}>See Pricing</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>Talk to SMRG</button>
+            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>Request a Demonstration</button>
           </div>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function PiruAdvance({ setPage }: { setPage: (page: string) => vo
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href={LINKS.market} target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent }}>Buy Market Intelligence — $2,500</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Request a Consultation</button>
+            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Request a Demonstration</button>
           </div>
         </div>
       </section>

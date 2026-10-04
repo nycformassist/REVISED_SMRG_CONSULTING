@@ -86,33 +86,114 @@ export default function Piru({ setPage }: { setPage: (page: string) => void }) {
             PIRU™ researches and verifies your target prospects — business verification, decision-maker intelligence, relevant business signals, and why-now context — so your team spends time on qualified conversations, not cold research.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="#pricing" style={ctaPrimary}>See Pricing</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>Talk to SMRG</button>
+            <button onClick={() => setPage('contact')} style={ctaPrimary}>Request a Demonstration</button>
+            <a href="#pricing" style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>See Pricing</a>
           </div>
         </div>
       </section>
 
-      {/* WHAT YOU RECEIVE */}
+      {/* THE PROBLEM */}
+      <section style={{ padding: '5rem 1rem', background: colors.surface }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', textAlign: 'center' }}>
+            Records alone don't tell a revenue team what to do.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem' }}>
+            Conventional prospect databases provide records. But records alone don't tell your team who matters, why they matter, what changed, what opportunity may exist, who should be contacted, or what context should inform the conversation.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
+            {[
+              'Who matters — and who is a distraction',
+              'Why they matter right now',
+              'What changed in their business',
+              'What opportunity may exist',
+              'Who should be contacted',
+              'What context should inform the conversation',
+            ].map((q) => (
+              <div key={q} style={{ padding: '1.5rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}`, fontWeight: 600, color: colors.secondary }}>
+                {q}
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginTop: '3rem', marginBottom: 0 }}>
+            PIRU™ exists to answer those questions — before your sales team spends its time.
+          </p>
+        </div>
+      </section>
+
+      {/* INTELLIGENCE LAYER */}
+      <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>
+            The intelligence layer between raw information and revenue.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '4rem', maxWidth: '750px', margin: '0 auto 4rem' }}>
+            PIRU™ moves beyond raw prospect records by organizing available information into actionable intelligence — researched, verified, structured, and ready for sales execution.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', alignItems: 'stretch' }}>
+            {[
+              { t: 'RAW INFORMATION', d: 'Prospect lists, public records, business signals as found.' },
+              { t: 'VERIFIED INFORMATION', d: 'Business verification. Operating status confirmed. Noise removed.' },
+              { t: 'STRUCTURED INTELLIGENCE', d: 'Decision-makers, signals, fit assessment, priority — organized.' },
+              { t: 'SALES-READY CONTEXT', d: 'Who to contact, why now, and what to say — with evidence.' },
+            ].map((s, i) => (
+              <div key={s.t} style={{ padding: '1.75rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)' }}>
+                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#93C5FD', marginBottom: '0.5rem' }}>STAGE {i + 1}</div>
+                <div style={{ fontWeight: 800, marginBottom: '0.5rem' }}>{s.t}</div>
+                <p style={{ color: '#9CA3AF', margin: 0, fontSize: '0.95rem' }}>{s.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT PIRU PRODUCES */}
       <section style={{ padding: '5rem 1rem', background: colors.surface }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
-            Research, verification, and context — not a contact list.
+            What PIRU produces.
           </h2>
           <p style={{ fontSize: '1.15rem', color: colors.secondary, textAlign: 'center', marginBottom: '4rem', maxWidth: '800px', margin: '0 auto 4rem' }}>
-            Every PIRU™ engagement delivers prospects your team can act on immediately, with the evidence behind each recommendation.
+            Practical outputs your revenue team can work from — not vague AI claims.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
             {[
-              { t: 'Business Verification', d: 'Each prospect is verified as a real, operating business — type, industry, and location confirmed.' },
-              { t: 'Decision-Maker Intelligence', d: 'Named decision-makers identified where verifiable, with the best available contact route.' },
-              { t: 'Why-Now Signals', d: 'Relevant business signals — formation, expansion, ownership change, capacity shifts — that create timing.' },
-              { t: 'Product-Fit Assessment', d: 'Each prospect is assessed against SMRG solutions so outreach starts from relevance, not guesswork.' },
-              { t: 'Priority Ranking', d: 'Prospects graded A/B/C with the evidence behind each grade, so effort goes where it counts.' },
-              { t: 'Structured Delivery', d: 'Individual intelligence briefs plus structured data delivery your team can load and work immediately.' },
+              { t: 'Prospect Intelligence', d: 'Researched briefs on each prospect — who they are, what they do, and the evidence behind it.' },
+              { t: 'Verification & Readiness Status', d: 'Each prospect verified as a real, operating business, with a clear readiness grade.' },
+              { t: 'Prioritization', d: 'Prospects graded A/B/C with the evidence behind each grade, so effort goes where it counts.' },
+              { t: 'Contextual Signals', d: 'Relevant business signals — formation, expansion, ownership change, capacity shifts — that create timing.' },
+              { t: 'Decision-Maker Information', d: 'Named decision-makers identified where verifiable, with the best available contact route.' },
+              { t: 'Opportunity Context', d: 'Product-fit assessment and why-now intelligence so outreach starts from relevance, not guesswork.' },
             ].map((c) => (
               <div key={c.t} style={{ padding: '2rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>{c.t}</h3>
                 <p style={{ color: colors.secondary, margin: 0 }}>{c.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REVENUE WORKFLOW */}
+      <section style={{ padding: '6rem 1rem', background: colors.background }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>
+            PIRU supports the revenue process — it isn't another static database.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: colors.secondary, marginBottom: '4rem', maxWidth: '750px', margin: '0 auto 4rem' }}>
+            Intelligence moves with your pipeline, from first discovery through the moment your team acts.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '1rem' }}>
+            {[
+              { t: 'DISCOVER', d: 'Target markets and prospect universes identified.' },
+              { t: 'VERIFY', d: 'Businesses verified; noise and dead records removed.' },
+              { t: 'UNDERSTAND', d: 'Decision-makers, signals, and context researched.' },
+              { t: 'PRIORITIZE', d: 'Prospects graded and ranked by evidence.' },
+              { t: 'ACT', d: 'Your team engages with sales-ready context.' },
+            ].map((s, i) => (
+              <div key={s.t} style={{ padding: '1.5rem 1rem', background: colors.surface, borderRadius: '8px', border: `2px solid ${i === 4 ? colors.accent : colors.border}` }}>
+                <div style={{ fontSize: '1.1rem', fontWeight: 900, color: i === 4 ? colors.accent : colors.primary, marginBottom: '0.5rem' }}>{s.t}</div>
+                <p style={{ color: colors.secondary, margin: 0, fontSize: '0.9rem' }}>{s.d}</p>
               </div>
             ))}
           </div>
@@ -156,13 +237,13 @@ export default function Piru({ setPage }: { setPage: (page: string) => void }) {
       {/* FINAL CTA */}
       <section style={{ padding: '6rem 1rem', background: colors.primary, color: '#fff', textAlign: 'center' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Stop spending sales time on unverified prospects.</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Turn prospect information into revenue intelligence.</h2>
           <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '2.5rem' }}>
-            Start with a Snapshot, or talk to SMRG about the right tier for your pipeline.
+            Request a demonstration to see PIRU™ on your market — or start with a Snapshot today.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={LINKS.snapshot} target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: colors.accent }}>Start with PIRU — $495</a>
-            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Request a Consultation</button>
+            <button onClick={() => setPage('contact')} style={{ ...ctaPrimary, background: colors.accent }}>Request a Demonstration</button>
+            <a href={LINKS.snapshot} target="_blank" rel="noopener noreferrer" style={{ ...ctaPrimary, background: 'transparent', border: '2px solid #fff' }}>Start with PIRU — $495</a>
           </div>
         </div>
       </section>

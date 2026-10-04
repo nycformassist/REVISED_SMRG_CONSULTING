@@ -122,6 +122,9 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                     <option value="RRU">RRU™ (Real Estate Readiness)</option>
                     <option value="LIRU">LIRU™ (Legal Intake)</option>
                     <option value="IRU">IRU™ (Immigration Intake)</option>
+                    <option value="PIRU">PIRU™ (Prospect Intelligence)</option>
+                    <option value="PIRU-Advance">PIRU Advance™ (Market Intelligence)</option>
+                    <option value="Inspector-AI">Inspector AI™ (Childcare Intelligence)</option>
                     <option value="Childcare">Childcare OCC™</option>
                     <option value="Custom">Custom Operational System</option>
                   </select>

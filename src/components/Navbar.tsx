@@ -3,6 +3,7 @@ import { useState } from 'react';
 export default function Navbar({ setPage }: { setPage: (page: string) => void }) {
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   // Enterprise typography and styling variables (Dark Mode Theme)
   const navStyle = { background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem', color: '#f8fafc' };
@@ -32,8 +33,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
           SMRG CONSULTING
         </button>
         
-        {/* Primary Navigation */}
-        <nav>
+        {/* Primary Navigation — desktop */}
+        <nav className="nav-desktop">
           <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', alignItems: 'center', margin: 0, padding: 0 }}>
             <li>
               <button onClick={() => setPage('home')} style={navStyle}>HOME</button>
@@ -235,7 +236,58 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
             </li>
           </ul>
         </nav>
+
+        {/* Hamburger — mobile */}
+        <button
+          className="nav-hamburger"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          style={{ background: 'none', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '6px', cursor: 'pointer', padding: '0.6rem 0.8rem', color: '#f8fafc', fontSize: '1.25rem', lineHeight: 1 }}
+        >
+          {mobileOpen ? '✕' : '☰'}
+        </button>
       </div>
+
+      {/* Mobile menu panel */}
+      {mobileOpen && (
+        <div className="nav-mobile-panel" style={{
+          position: 'fixed', top: '90px', left: 0, right: 0, bottom: 0,
+          background: 'rgba(2, 6, 23, 0.98)', backdropFilter: 'blur(16px)',
+          zIndex: 99998, overflowY: 'auto', padding: '1.5rem 2rem 3rem',
+        }}>
+          {[
+            { t: 'HOME', page: 'home' },
+            { t: 'HOW IT WORKS', page: 'how-it-works' },
+            { t: 'INDUSTRIES', page: 'industries' },
+            { t: 'ABOUT', page: 'about' },
+          ].map((l) => (
+            <button key={l.t} onClick={() => { setPage(l.page); setMobileOpen(false); }}
+              style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.08)', color: '#f8fafc', fontWeight: 700, fontSize: '1rem', padding: '1rem 0', cursor: 'pointer', letterSpacing: '0.04em' }}>
+              {l.t}
+            </button>
+          ))}
+          <div style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.14em', color: '#38bdf8', margin: '1.5rem 0 0.25rem' }}>SOLUTIONS</div>
+          {[
+            { t: 'RRU™ — Real Estate Readiness', page: 'rru' },
+            { t: 'LIRU™ — Legal Intake', page: 'liru' },
+            { t: 'IRU™ — Immigration Intake', page: 'iru' },
+            { t: 'PIRU™ — Prospect Intelligence', page: 'piru' },
+            { t: 'PIRU Advance™ — Market Intelligence', page: 'piru-advance' },
+            { t: 'Inspector AI™ — Childcare Intelligence', page: 'inspector-ai' },
+            { t: 'Childcare OCC™', page: 'childcare' },
+            { t: 'Custom Operational Systems', page: 'custom-systems' },
+          ].map((l) => (
+            <button key={l.t} onClick={() => { setPage(l.page); setMobileOpen(false); }}
+              style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', color: '#94a3b8', fontWeight: 500, fontSize: '0.95rem', padding: '0.85rem 0', cursor: 'pointer' }}>
+              {l.t}
+            </button>
+          ))}
+          <button onClick={() => { setPage('contact'); setMobileOpen(false); }}
+            style={{ display: 'block', width: '100%', marginTop: '1.75rem', background: 'linear-gradient(135deg, rgba(56,189,248,0.9), rgba(37,99,235,0.9))', color: '#fff', border: 'none', borderRadius: '6px', padding: '1rem', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}>
+            Request a Demonstration
+          </button>
+        </div>
+      )}
     </header>
   );
 }

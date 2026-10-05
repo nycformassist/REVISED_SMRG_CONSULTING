@@ -31,10 +31,10 @@ export default function Industries({ setPage }: { setPage: (page: string) => voi
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background, borderBottom: `1px solid ${colors.border}` }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
-            Industries We Serve
+            Where the architecture applies
           </div>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
-            Vertical expertise. Systematic execution.
+            Different industries. Same problem.
           </h1>
           <p style={{ fontSize: '1.25rem', color: colors.secondary, maxWidth: '750px', margin: '0 auto' }}>
             Different sectors face distinct operational challenges, but they share a common friction point: unstructured inbound information. Here is where SMRG utilities are deployed.

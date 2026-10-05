@@ -13,7 +13,8 @@ import CustomSystems from './pages/CustomSystems';
 // Prospect & Operational Intelligence
 import Piru from './pages/Piru';
 import PiruAdvance from './pages/PiruAdvance';
-import InspectorAi from './pages/InspectorAi';
+import Biru from './pages/Biru';
+import Diru from './pages/Diru';
 // Strategic Pages
 import Industries from './pages/Industries';
 import HowItWorks from './pages/HowItWorks';
@@ -40,7 +41,11 @@ export default function App() {
       // Prospect & Operational Intelligence
       case 'piru': return <Piru setPage={setCurrentPage} />;
       case 'piru-advance': return <PiruAdvance setPage={setCurrentPage} />;
-      case 'inspector-ai': return <InspectorAi setPage={setCurrentPage} />;
+      case 'biru': return <Biru setPage={setCurrentPage} />;
+      case 'diru': return <Diru setPage={setCurrentPage} />;
+      // Legacy: the retired Inspector AI product page now resolves to DIRU,
+      // the daycare inspection-readiness product that continues that offering.
+      case 'inspector-ai': return <Diru setPage={setCurrentPage} />;
       
       // Market Categories
       case 'industries': return <Industries setPage={setCurrentPage} />;

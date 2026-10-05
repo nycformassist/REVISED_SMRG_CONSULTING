@@ -114,12 +114,20 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                     PIRU Advance™ (Market Intelligence)
                   </button>
                   <button 
-                    onClick={() => { setPage('inspector-ai'); setSolutionsOpen(false); }} 
+                    onClick={() => { setPage('biru'); setSolutionsOpen(false); }} 
                     style={dropdownItemStyle}
                     onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
                     onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
                   >
-                    Inspector AI™ (Childcare Intelligence)
+                    BIRU™ (Business Inspection)
+                  </button>
+                  <button 
+                    onClick={() => { setPage('diru'); setSolutionsOpen(false); }} 
+                    style={dropdownItemStyle}
+                    onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
+                  >
+                    DIRU™ (Daycare Inspection)
                   </button>
                   <button 
                     onClick={() => { setPage('childcare'); setSolutionsOpen(false); }} 
@@ -282,7 +290,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
             { t: 'IRU™ — Immigration Intake', page: 'iru' },
             { t: 'PIRU™ — Prospect Intelligence', page: 'piru' },
             { t: 'PIRU Advance™ — Market Intelligence', page: 'piru-advance' },
-            { t: 'Inspector AI™ — Childcare Intelligence', page: 'inspector-ai' },
+            { t: 'BIRU™ — Business Inspection', page: 'biru' },
+            { t: 'DIRU™ — Daycare Inspection', page: 'diru' },
             { t: 'Childcare OCC™', page: 'childcare' },
             { t: 'Custom Operational Systems', page: 'custom-systems' },
           ].map((l) => (

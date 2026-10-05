@@ -77,7 +77,7 @@ export default function HowItWorks({ setPage }: { setPage: (page: string) => voi
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>One architecture. Many applications.</h2>
           <p style={{ fontSize: '1.15rem', color: '#D1D5DB', marginBottom: '2.5rem', lineHeight: 1.7 }}>
-            RRU, LIRU, IRU, PIRU, and Inspector AI are each a specialized application of this same intelligence sequence — adapted to the operational problem, not forced onto it.
+            RRU, LIRU, IRU, PIRU, BIRU, and DIRU are each a specialized application of this same intelligence sequence — adapted to the operational problem, not forced onto it.
           </p>
           <button
             onClick={() => setPage('contact')}

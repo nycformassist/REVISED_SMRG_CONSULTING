@@ -70,7 +70,7 @@ export const PRODUCT_CHAINS: Record<string, SignalStage[]> = {
     { label: 'SIGNAL DETECTION' },
     { label: 'SALES INTELLIGENCE', kind: 'output' },
   ],
-  inspector: [
+  diru: [
     { label: 'RECORDS', kind: 'input' },
     { label: 'REVIEW' },
     { label: 'CROSS-REFERENCE' },

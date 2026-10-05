@@ -86,10 +86,17 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       ],
     },
     {
-      name: 'Inspector AI™', sub: 'Operational Information Intelligence',
-      line: "Know what your records say before an inspection does.",
-      chain: 'RECORDS → REVIEW → CROSS-REFERENCE → FINDINGS → PRIORITIES',
-      page: 'inspector-ai', explore: 'Explore Inspector AI',
+      name: 'BIRU™', sub: 'Business Inspection Readiness Utility',
+      line: 'Know what your records say before someone else does.',
+      chain: 'DOCUMENTS → UNDERSTANDING → CROSS-REFERENCE → FINDINGS → PRIORITY → HUMAN ACTION',
+      page: 'biru', explore: 'Explore BIRU',
+      ctas: [{ t: 'Request a Demonstration', page: 'contact' }],
+    },
+    {
+      name: 'DIRU™', sub: 'Daycare Inspection Readiness Utility',
+      line: 'Know where your daycare records stand before inspection day.',
+      chain: 'RECORDS → REVIEW → CROSS-REFERENCE → FINDINGS → READINESS',
+      page: 'diru', explore: 'Explore DIRU',
       ctas: [{ t: 'Request a Demonstration', page: 'contact' }],
       buy: [
         { t: 'Single $299', href: BUY.inspSingle },

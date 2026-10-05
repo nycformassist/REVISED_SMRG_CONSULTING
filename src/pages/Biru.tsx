@@ -68,8 +68,11 @@ export default function Biru({ setPage }: { setPage: (page: string) => void }) {
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2rem', maxWidth: '750px', margin: '0 auto 2rem' }}>
             BIRU™ finds the inconsistencies, gaps, and disconnected records that become costly when a business is acquired, expanded, reorganized, or examined.
           </p>
-          <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem', fontStyle: 'italic' }}>
+          <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '1.5rem', maxWidth: '700px', margin: '0 auto 1.5rem', fontStyle: 'italic' }}>
             "Something changed in your business. We think that change may have created an information problem worth looking at."
+          </p>
+          <p style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '2.5rem', letterSpacing: '0.02em' }}>
+            BIRU finds the disconnect.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => setPage('contact')} style={ctaPrimary}>Request a BIRU Assessment</button>

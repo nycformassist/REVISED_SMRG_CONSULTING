@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar({ setPage }: { setPage: (page: string) => void }) {
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Lock background scroll while the mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
 
   // Enterprise typography and styling variables (Dark Mode Theme)
   const navStyle = { background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem', color: '#f8fafc' };
@@ -22,6 +28,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
   };
 
   return (
+    <>
     <header style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', backgroundColor: '#020617', position: 'fixed', top: 0, left: 0, width: '100%', height: '90px', zIndex: 99999, display: 'flex', alignItems: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1200px', width: '100%', margin: '0 auto', padding: '0 2rem' }}>
         
@@ -247,13 +254,15 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
           {mobileOpen ? '✕' : '☰'}
         </button>
       </div>
+    </header>
 
-      {/* Mobile menu panel */}
+      {/* Mobile menu panel — sibling of header so fixed positioning uses the viewport */}
       {mobileOpen && (
         <div className="nav-mobile-panel" style={{
           position: 'fixed', top: '90px', left: 0, right: 0, bottom: 0,
           background: 'rgba(2, 6, 23, 0.98)', backdropFilter: 'blur(16px)',
-          zIndex: 99998, overflowY: 'auto', padding: '1.5rem 2rem 3rem',
+          WebkitBackdropFilter: 'blur(16px)',
+          zIndex: 99998, overflowY: 'auto', WebkitOverflowScrolling: 'touch', padding: '1.5rem 2rem 3rem',
         }}>
           {[
             { t: 'HOME', page: 'home' },
@@ -288,6 +297,6 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
           </button>
         </div>
       )}
-    </header>
+    </>
   );
 }

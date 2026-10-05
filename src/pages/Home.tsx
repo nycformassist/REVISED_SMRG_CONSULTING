@@ -88,7 +88,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
     {
       name: 'BIRU™', sub: 'Business Inspection Readiness Utility',
       line: 'Know what your records say before someone else does.',
-      chain: 'DOCUMENTS → UNDERSTANDING → CROSS-REFERENCE → FINDINGS → PRIORITY → HUMAN ACTION',
+      chain: 'RECORDS → UNDERSTAND → CROSS-REFERENCE → DETECT → PRIORITIZE → HUMAN ACTION',
       page: 'biru', explore: 'Explore BIRU',
       ctas: [{ t: 'Request a Demonstration', page: 'contact' }],
     },

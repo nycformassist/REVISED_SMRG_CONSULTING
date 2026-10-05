@@ -30,8 +30,9 @@ export default function Biru({ setPage }: { setPage: (page: string) => void }) {
     { t: 'Expiring records', d: 'Time-sensitive documents approaching renewal — flagged before they lapse.' },
     { t: 'Stale information', d: 'Records that have not been updated within the expected cycle.' },
     { t: 'Conflicting information', d: 'The same entity, date, or fact stated differently across documents.' },
-    { t: 'Entity inconsistencies', d: 'Names, roles, or identifiers that do not resolve to the same person or record.' },
+    { t: 'Inconsistent entity information', d: 'Names, roles, or identifiers that do not resolve to the same person or record.' },
     { t: 'Requirement gaps', d: 'Operational requirements with no supporting evidence found.' },
+    { t: 'Record relationships', d: 'Connections between records — across people, locations, and time — that may matter for readiness.' },
   ];
 
   const sources = [
@@ -58,9 +59,42 @@ export default function Biru({ setPage }: { setPage: (page: string) => void }) {
           <p style={{ fontSize: '1.25rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '750px', margin: '0 auto' }}>
             BIRU™ is a business operational-record inspection and readiness intelligence system. It analyzes your operational records and surfaces the issues an inspection, audit, review, or external examination would find — before it finds them.
           </p>
+          <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto', fontStyle: 'italic' }}>
+            "Something changed in your business. We think that change may have created an information problem worth looking at."
+          </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => setPage('contact')} style={ctaPrimary}>Request a Demonstration</button>
             <button onClick={() => setPage('how-it-works')} style={{ ...ctaPrimary, background: 'transparent', color: colors.primary, border: `2px solid ${colors.primary}` }}>See How It Works</button>
+          </div>
+        </div>
+      </section>
+
+      {/* WHEN BIRU BELONGS */}
+      <section style={{ padding: '5rem 1rem', background: colors.primary, color: '#fff' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
+            BIRU is for the moment when understanding your records becomes worth paying for.
+          </h2>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', textAlign: 'center', marginBottom: '1rem', maxWidth: '800px', margin: '0 auto 1rem' }}>
+            BIRU is not generic inspection-management software, a compliance tracker, a document vault, an OCR system, or a checklist — and it is not a replacement for the inspection or compliance software you may already have. You may already have excellent systems. That is not the problem.
+          </p>
+          <p style={{ fontSize: '1.15rem', color: '#D1D5DB', textAlign: 'center', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem' }}>
+            The problem BIRU addresses is what happens when change, complexity, consequence, and timing converge:
+          </p>
+          <div style={{ textAlign: 'center', fontSize: '1.3rem', fontWeight: 800, letterSpacing: '0.03em', marginBottom: '3.5rem', color: '#fff' }}>
+            CHANGE + COMPLEXITY + CONSEQUENCE + TIMING = NEED PLACEMENT
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {[
+              { t: 'Acquisition or management change', d: 'New ownership inherits an information environment — records scattered across prior operators, locations, systems, and people. The business may not yet know whether those records collectively tell a complete and reliable story. An upcoming inspection creates the timing.' },
+              { t: 'Rapid expansion', d: 'More people, more credentials, more training, more locations, more responsibility, more records — and more opportunities for inconsistency, missing information, stale information, or disconnected information. A coming review creates consequence and timing.' },
+              { t: 'Existing system, new discrepancies', d: 'A compliance system is already in place — and recurring discrepancies keep appearing, an audit is approaching, and a new compliance director has just taken responsibility. More information to understand, not less. The question becomes what the information says across systems, records, people, locations, and responsibilities.' },
+            ].map((s) => (
+              <div key={s.t} style={{ padding: '2rem', background: 'rgba(255,255,255,0.06)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.75rem', color: '#fff' }}>{s.t}</h3>
+                <p style={{ color: '#D1D5DB', margin: 0, fontSize: '0.98rem' }}>{s.d}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -81,11 +115,11 @@ export default function Biru({ setPage }: { setPage: (page: string) => void }) {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {[
-              { t: 'DOCUMENTS', d: 'Provide your operational records — whatever your business already maintains.' },
-              { t: 'UNDERSTANDING', d: 'BIRU structures the information and extracts what each record asserts.' },
+              { t: 'RECORDS', d: 'Provide your operational records — whatever your business already maintains.' },
+              { t: 'UNDERSTAND', d: 'BIRU structures the information and extracts what each record asserts.' },
               { t: 'CROSS-REFERENCE', d: 'Information is compared across documents for consistency and coverage.' },
-              { t: 'FINDINGS', d: 'Gaps, conflicts, expirations, and weaknesses are identified with evidence.' },
-              { t: 'PRIORITY', d: 'Findings are ordered so the most consequential issues come first.' },
+              { t: 'DETECT', d: 'Gaps, conflicts, expirations, and weaknesses are identified with evidence.' },
+              { t: 'PRIORITIZE', d: 'Findings are ordered so the most consequential issues come first.' },
               { t: 'HUMAN ACTION', d: 'Your team reviews and acts — with the full picture in front of them.' },
             ].map((s, i) => (
               <div key={s.t} style={{ padding: '1.75rem', background: colors.background, borderRadius: '8px', border: `1px solid ${colors.border}` }}>
@@ -134,7 +168,7 @@ export default function Biru({ setPage }: { setPage: (page: string) => void }) {
         <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem' }}>Readiness intelligence — stated plainly.</h2>
           <p style={{ fontSize: '1.1rem', color: colors.secondary, marginBottom: '0' }}>
-            BIRU™ is not a document vault, a filing cabinet, generic OCR, or a checklist application. It does not grant regulatory certification, guarantee inspection outcomes, provide legal advice, or replace inspectors and qualified compliance professionals. It examines the records you have and shows you, with evidence, where readiness breaks down — so humans can fix it before scrutiny arrives.
+            BIRU™ is not a document vault, a filing cabinet, generic OCR, or a checklist application — and it is not a replacement for existing inspection or compliance software. It does not grant regulatory certification, guarantee inspection outcomes, provide legal advice, or replace inspectors and qualified compliance professionals. It examines the records you have and shows you, with evidence, where readiness breaks down — so humans can fix it before scrutiny arrives.
           </p>
         </div>
       </section>

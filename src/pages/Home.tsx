@@ -40,9 +40,9 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
 
   const products = [
     {
-      name: 'RRU™', sub: 'Real Estate Readiness Utility',
-      line: 'Turn an inquiry into intelligence a real-estate professional can act on.',
-      chain: 'INQUIRY → CAPTURE → STRUCTURE → INTELLIGENCE BRIEF → PROFESSIONAL',
+      name: 'RRU™', sub: 'Rental Readiness Utility',
+      line: 'Rental inquiries arrive as fragmented information. RRU converts every inquiry into structured rental intelligence — who the prospect is, what they are looking for, whether the inquiry is complete, what needs follow-up, and who should act.',
+      chain: 'INQUIRY → QUALIFICATION → STRUCTURED RENTAL INTELLIGENCE → HUMAN FOLLOW-UP',
       page: 'rru', explore: 'Explore RRU',
       extra: 'RRU Professional Dual — $2,500 setup + $1,500/mo',
       ctas: [{ t: 'Book a Live Demonstration', page: 'contact' }],
@@ -62,7 +62,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       ctas: [{ t: 'Book a Live Demonstration', page: 'contact' }],
     },
     {
-      name: 'PIRU™', sub: 'Prospect Intelligence & Revenue Readiness',
+      name: 'PIRU™', sub: 'Prospect Intelligence & Revenue Readiness Utility',
       line: 'Turn a prospect list into actionable business intelligence before sales time is spent.',
       chain: 'PROSPECT → RESEARCH → VERIFY → SIGNAL DETECTION → SALES INTELLIGENCE',
       page: 'piru', explore: 'Explore PIRU',
@@ -105,24 +105,24 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       ],
     },
     {
-      name: 'Childcare OCC™', sub: 'Operational Readiness',
+      name: 'Childcare OCC™', sub: 'Operational Capacity Controller',
       line: 'Operational readiness for childcare environments.',
       chain: 'RECORDS → REVIEW → STRUCTURE → READINESS → OPERATOR',
       page: 'childcare', explore: 'Explore Childcare OCC',
       ctas: [{ t: 'Book a Live Demonstration', page: 'contact' }],
     },
     {
-      name: 'Custom Systems', sub: 'Specialized Intelligence Deployments',
+      name: 'Custom Operational Intelligence', sub: 'Specialized Intelligence Deployments',
       line: "When the information problem doesn't fit a standard product.",
       chain: 'WORKFLOW → EVALUATION → INTELLIGENCE LAYER → ACTION',
-      page: 'custom-systems', explore: 'Explore Custom Systems',
+      page: 'custom-systems', explore: 'Explore Custom Intelligence',
       ctas: [{ t: 'Identify Your Intelligence Opportunity', page: 'contact' }],
     },
     {
-      name: 'Partner Suite', sub: 'Licensed Intelligence Infrastructure',
-      line: 'One intelligence infrastructure across multiple workflows.',
+      name: 'SMRG Lead Intelligence Partner Suite', sub: 'Revenue Intelligence Relationship',
+      line: 'Your market produces information. SMRG turns it into a prioritized revenue intelligence system. A CRM stores what you know; SMRG intelligence tells you what the information means and what to do next.',
       chain: 'WORKFLOWS → SHARED ARCHITECTURE → INTELLIGENCE → TEAMS',
-      page: 'partner', explore: 'Explore Partnership',
+      page: 'partner', explore: 'Explore Partner Suite',
       extra: 'Partner deployments from $10,000 implementation + $5,000/mo',
       ctas: [{ t: 'Discuss a Partner Deployment', page: 'contact' }],
     },

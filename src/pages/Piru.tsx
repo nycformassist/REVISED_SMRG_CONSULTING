@@ -69,7 +69,7 @@ export default function Piru({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.primary, lineHeight: 1.6 }}>
       <SEO
-        title="PIRU™ | Prospect Intelligence Readiness Utility"
+        title="PIRU™ | Prospect Intelligence & Revenue Readiness Utility"
         description="Turn a prospect list into actionable business intelligence before sales time is spent. Researched, verified prospects with decision-maker intelligence and why-now signals."
       />
 
@@ -77,7 +77,7 @@ export default function Piru({ setPage }: { setPage: (page: string) => void }) {
       <section style={{ padding: '6rem 1rem', textAlign: 'center', background: colors.background }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{ fontWeight: 800, color: colors.accent, letterSpacing: '0.05em', marginBottom: '1rem', textTransform: 'uppercase' }}>
-            PIRU™ — Prospect Intelligence Readiness Utility
+            PIRU™ — Prospect Intelligence & Revenue Readiness Utility
           </div>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
             Turn a prospect list into actionable business intelligence before sales time is spent.

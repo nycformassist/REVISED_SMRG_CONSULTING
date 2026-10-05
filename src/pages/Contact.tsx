@@ -58,7 +58,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.textLight, lineHeight: 1.6, background: colors.background, minHeight: '80vh' }}>
       <SEO 
         title="Request a Demonstration | SMRG Consulting" 
-        description="Schedule a live demonstration of SMRG Consulting's enterprise AI intake utilities and operational readiness systems."
+        description="Schedule a live demonstration of SMRG Consulting's specialized intelligence utilities and operational readiness systems."
       />
       
       <section style={{ padding: '6rem 1rem' }}>
@@ -119,7 +119,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                   <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', color: colors.textLight }}>Solution of Interest</label>
                   <select name="product_interest" required defaultValue="" style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: `1px solid ${colors.border}`, fontSize: '1rem', boxSizing: 'border-box', background: '#FFFFFF', color: '#111827' }}>
                     <option value="" disabled>Select a utility...</option>
-                    <option value="RRU">RRU™ (Real Estate Readiness)</option>
+                    <option value="RRU">RRU™ (Rental Readiness)</option>
                     <option value="LIRU">LIRU™ (Legal Intake)</option>
                     <option value="IRU">IRU™ (Immigration Intake)</option>
                     <option value="PIRU">PIRU™ (Prospect Intelligence)</option>
@@ -127,7 +127,8 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
                     <option value="BIRU">BIRU™ (Business Inspection Readiness)</option>
                     <option value="DIRU">DIRU™ (Daycare Inspection Readiness)</option>
                     <option value="Childcare">Childcare OCC™</option>
-                    <option value="Custom">Custom Operational System</option>
+                    <option value="Custom">Custom Operational Intelligence</option>
+                    <option value="Partner">SMRG Lead Intelligence Partner Suite</option>
                     <option value="Other">Other / Not Sure</option>
                   </select>
                 </div>

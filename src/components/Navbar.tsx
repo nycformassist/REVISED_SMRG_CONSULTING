@@ -79,7 +79,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                     onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
                     onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#ffffff'; }}
                   >
-                    RRU™ (Real Estate Readiness)
+                    RRU™ (Rental Readiness Utility)
                   </button>
                   <button 
                     onClick={() => { setPage('liru'); setSolutionsOpen(false); }} 
@@ -139,11 +139,19 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                   </button>
                   <button 
                     onClick={() => { setPage('custom-systems'); setSolutionsOpen(false); }} 
+                    style={dropdownItemStyle}
+                    onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
+                  >
+                    Custom Operational Intelligence
+                  </button>
+                  <button 
+                    onClick={() => { setPage('partner'); setSolutionsOpen(false); }} 
                     style={{...dropdownItemStyle, borderBottom: 'none'}}
                     onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
                     onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#94a3b8'; }}
                   >
-                    Custom Operational Systems
+                    SMRG Lead Intelligence Partner Suite
                   </button>
                 </div>
               )}
@@ -285,7 +293,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
           ))}
           <div style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.14em', color: '#38bdf8', margin: '1.5rem 0 0.25rem' }}>SOLUTIONS</div>
           {[
-            { t: 'RRU™ — Real Estate Readiness', page: 'rru' },
+            { t: 'RRU™ — Rental Readiness Utility', page: 'rru' },
             { t: 'LIRU™ — Legal Intake', page: 'liru' },
             { t: 'IRU™ — Immigration Intake', page: 'iru' },
             { t: 'PIRU™ — Prospect Intelligence', page: 'piru' },
@@ -293,7 +301,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
             { t: 'BIRU™ — Business Inspection', page: 'biru' },
             { t: 'DIRU™ — Daycare Inspection', page: 'diru' },
             { t: 'Childcare OCC™', page: 'childcare' },
-            { t: 'Custom Operational Systems', page: 'custom-systems' },
+            { t: 'Custom Operational Intelligence', page: 'custom-systems' },
+            { t: 'SMRG Lead Intelligence Partner Suite', page: 'partner' },
           ].map((l) => (
             <button key={l.t} onClick={() => { setPage(l.page); setMobileOpen(false); }}
               style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', color: '#94a3b8', fontWeight: 500, fontSize: '0.95rem', padding: '0.85rem 0', cursor: 'pointer' }}>

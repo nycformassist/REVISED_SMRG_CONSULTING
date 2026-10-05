@@ -34,7 +34,7 @@ export default function SEO({ title, description, canonicalPath = '' }: SEOProps
       "@type": "ProfessionalService",
       "name": "SMRG Consulting",
       "founder": "Valentine Saint Martin",
-      "description": "Engineering structured operational utilities and AI-powered inbound intake systems for modern enterprises.",
+      "description": "Specialized intelligence infrastructure that transforms complex information into structured, actionable intelligence for human decision-making.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "New York",
@@ -46,7 +46,7 @@ export default function SEO({ title, description, canonicalPath = '' }: SEOProps
         "@type": "OfferCatalog",
         "name": "Enterprise Operational Utilities",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RRU™ Real Estate Readiness Utility" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RRU™ Rental Readiness Utility" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LIRU™ Legal Intake Readiness Utility" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IRU™ Immigration Intake Readiness Utility" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Childcare OCC™ Operational Capacity Controller" } }

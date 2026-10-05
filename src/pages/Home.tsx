@@ -90,7 +90,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
       line: 'Know what your records say before someone else does.',
       chain: 'RECORDS → UNDERSTAND → CROSS-REFERENCE → DETECT → PRIORITIZE → HUMAN ACTION',
       page: 'biru', explore: 'Explore BIRU',
-      ctas: [{ t: 'Request a Demonstration', page: 'contact' }],
+      ctas: [{ t: 'Request a BIRU Assessment', page: 'contact' }],
     },
     {
       name: 'DIRU™', sub: 'Daycare Inspection Readiness Utility',

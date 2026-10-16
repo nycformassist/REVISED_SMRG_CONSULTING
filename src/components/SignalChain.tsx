@@ -55,6 +55,23 @@ export const MASTER_CHAIN: SignalStage[] = [
   { label: 'HUMAN ACTION', kind: 'human' },
 ];
 
+/**
+ * The corporate positioning chain for the homepage:
+ * INFORMATION → STRUCTURE → UNDERSTAND → CROSS-REFERENCE →
+ * PRIORITIZE → INTELLIGENCE → HUMAN ACTION
+ * Expresses the overall intelligence philosophy, not a universal
+ * technical specification for every utility.
+ */
+export const CORPORATE_CHAIN: SignalStage[] = [
+  { label: 'INFORMATION', kind: 'input' },
+  { label: 'STRUCTURE' },
+  { label: 'UNDERSTAND' },
+  { label: 'CROSS-REFERENCE' },
+  { label: 'PRIORITIZE' },
+  { label: 'INTELLIGENCE', kind: 'output' },
+  { label: 'HUMAN ACTION', kind: 'human' },
+];
+
 export const PRODUCT_CHAINS: Record<string, SignalStage[]> = {
   rru: [
     { label: 'INQUIRY', kind: 'input' },

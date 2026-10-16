@@ -205,6 +205,39 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
+      {/* 3B — AI ADOPTION INSIGHT */}
+      <section style={{ ...section, borderTop: `1px solid ${border}` }}>
+        <div style={{ ...wrap, maxWidth: '800px', textAlign: 'center' }}>
+          <div style={eyebrow}>A supporting insight</div>
+          <h2 style={h2}>AI ADOPTION ISN'T THE SAME AS BUSINESS IMPROVEMENT.</h2>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            Your team may already have access to AI. Your business may still be losing time, missing opportunities, and carrying administrative work that gets in the way of growth.
+          </p>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            That's because working faster and working better as a business are not the same thing.
+          </p>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            SMRG helps service-based businesses turn information, existing tools, and workflows into practical systems that improve how work gets done.
+          </p>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            We look at what happens between the inquiry and the outcome: how information moves, where follow-ups break down, what consumes your team's time, and where opportunities get lost.
+          </p>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            Then we help put a better operating system around that work — connecting the right information, processes, and actions without asking you to become your own software developer or automation manager.
+          </p>
+          <p style={{ ...body, marginBottom: '1.5rem' }}>
+            The goal isn't more technology.
+          </p>
+          <p style={{ ...body, marginBottom: '2.5rem' }}>
+            It's fewer missed opportunities. Better follow-through. Less administrative friction. More visibility into what's happening in your business.
+          </p>
+          <p style={{ ...body, fontWeight: 700, color: ink, marginBottom: '2.5rem' }}>
+            You run your business. We help make the systems behind it work better.
+          </p>
+          <button onClick={() => setPage('contact')} style={ctaPrimary}>Let's identify where your business is losing time, opportunities, or operational visibility</button>
+        </div>
+      </section>
+
       {/* 4 — ARCHITECTURE */}
       <section style={{ ...section, borderTop: `1px solid ${border}` }}>
         <div style={wrap}>

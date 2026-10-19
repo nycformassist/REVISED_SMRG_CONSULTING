@@ -54,7 +54,8 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                   border: '1px solid rgba(255,255,255,0.2)',
                   fontSize: '0.9rem',
                   boxShadow: '0 0 15px rgba(37, 99, 235, 0.3)',
-                  transition: 'all 0.2s ease'
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap'
                 }}
                 onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0 0 25px rgba(56, 189, 248, 0.6)'; e.currentTarget.style.transform = 'scale(1.02)'; }}
                 onMouseOut={(e) => { e.currentTarget.style.boxShadow = '0 0 15px rgba(37, 99, 235, 0.3)'; e.currentTarget.style.transform = 'scale(1)'; }}

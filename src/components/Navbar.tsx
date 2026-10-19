@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 export default function Navbar({ setPage }: { setPage: (page: string) => void }) {
-  const [applicationsOpen, setApplicationsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   // Lock background scroll while the mobile menu is open
@@ -12,32 +11,6 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
 
   // Enterprise typography and styling variables (Dark Mode Theme)
   const navStyle = { background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem', color: '#f8fafc' };
-  const dropdownItemStyle = {
-    textAlign: 'left' as const,
-    padding: '0.85rem 1.25rem',
-    width: '100%',
-    background: 'transparent',
-    border: 'none',
-    cursor: 'pointer',
-    fontWeight: 500,
-    fontSize: '0.9rem',
-    color: '#94a3b8',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
-    transition: 'all 0.2s ease'
-  };
-
-  const applicationLinks = [
-    { t: 'RRU™ (Rental Readiness Utility)', page: 'rru', strong: true },
-    { t: 'LIRU™ (Legal Intake)', page: 'liru' },
-    { t: 'IRU™ (Immigration Intake)', page: 'iru' },
-    { t: 'PIRU™ (Prospect Intelligence)', page: 'piru' },
-    { t: 'PIRU Advance™ (Market Intelligence)', page: 'piru-advance' },
-    { t: 'BIRU™ (Business Inspection)', page: 'biru' },
-    { t: 'DIRU™ (Daycare Inspection)', page: 'diru' },
-    { t: 'Childcare OCC™', page: 'childcare' },
-    { t: 'Custom Operational Intelligence', page: 'custom-systems' },
-    { t: 'SMRG Lead Intelligence Partner Suite', page: 'partner', last: true },
-  ];
 
   return (
     <>
@@ -61,51 +34,6 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
 
             <li>
               <button onClick={() => setPage('how-it-works')} style={navStyle}>HOW IT WORKS</button>
-            </li>
-
-            {/* Applications Dropdown — all product pages remain reachable */}
-            <li style={{ position: 'relative', paddingBottom: '15px', marginBottom: '-15px' }} onMouseLeave={() => setApplicationsOpen(false)}>
-              <button
-                onMouseEnter={() => setApplicationsOpen(true)}
-                onClick={() => setApplicationsOpen(!applicationsOpen)}
-                style={navStyle}
-              >
-                APPLICATIONS ▾
-              </button>
-              {applicationsOpen && (
-                <div style={{
-                  position: 'absolute',
-                  top: 'calc(100% + 5px)',
-                  left: 0,
-                  background: '#0f172a',
-                  border: '1px solid rgba(56, 189, 248, 0.2)',
-                  borderRadius: '8px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  zIndex: 10001,
-                  minWidth: '300px',
-                  boxShadow: '0 20px 30px -10px rgba(0,0,0,0.5), 0 0 15px rgba(56, 189, 248, 0.1)',
-                  backdropFilter: 'blur(16px)',
-                  overflow: 'hidden',
-                  paddingTop: '5px'
-                }}>
-                  {applicationLinks.map((l) => (
-                    <button
-                      key={l.page}
-                      onClick={() => { setPage(l.page); setApplicationsOpen(false); }}
-                      style={{
-                        ...dropdownItemStyle,
-                        ...(l.strong ? { fontWeight: 700, color: '#ffffff' } : {}),
-                        ...(l.last ? { borderBottom: 'none' } : {}),
-                      }}
-                      onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)'; e.currentTarget.style.color = '#38bdf8'; }}
-                      onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = l.strong ? '#ffffff' : '#94a3b8'; }}
-                    >
-                      {l.t}
-                    </button>
-                  ))}
-                </div>
-              )}
             </li>
 
             <li>
@@ -164,13 +92,6 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
           ].map((l) => (
             <button key={l.t} onClick={() => { setPage(l.page); setMobileOpen(false); }}
               style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.08)', color: '#f8fafc', fontWeight: 700, fontSize: '1rem', padding: '1rem 0', cursor: 'pointer', letterSpacing: '0.04em' }}>
-              {l.t}
-            </button>
-          ))}
-          <div style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.14em', color: '#38bdf8', margin: '1.5rem 0 0.25rem' }}>APPLICATIONS</div>
-          {applicationLinks.map((l) => (
-            <button key={l.page} onClick={() => { setPage(l.page); setMobileOpen(false); }}
-              style={{ display: 'block', width: '100%', textAlign: 'left', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', color: '#94a3b8', fontWeight: 500, fontSize: '0.95rem', padding: '0.85rem 0', cursor: 'pointer' }}>
               {l.t}
             </button>
           ))}

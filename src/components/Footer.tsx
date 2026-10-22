@@ -10,7 +10,7 @@ export default function Footer({ setPage }: { setPage: (page: string) => void })
           <span style={{ color: '#4B5563' }}>•</span>
           <a href="/terms" style={{ color: '#9CA3AF', textDecoration: 'none' }}>Terms of Service</a>
         </div>
-        <p>&copy; 2026 SMRG Consulting / Aten Technologies. All rights reserved.</p>
+        <p>&copy; 2026 SMRG Consulting / Anuk Ausar Technologies. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -57,7 +57,7 @@ export default function Contact({ setPage }: { setPage?: (page: string) => void 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: colors.textLight, lineHeight: 1.6, background: colors.background, minHeight: '80vh' }}>
       <SEO 
-        title="Request a Demonstration | SMRG Consulting" 
+        title="Discuss Your Intelligence Opportunity" 
         description="Schedule a live demonstration of SMRG Consulting's specialized intelligence utilities and operational readiness systems."
       />
       
